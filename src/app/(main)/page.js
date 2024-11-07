@@ -1,5 +1,12 @@
-import Image from "next/image";
+import DashboardPage from "@/components/common/DashboardPage";
+import PageHeading from "@/components/common/PageHeading";
+import { useTranslations } from "next-intl";
 
 export default function Home() {
-  return <div>This is home page</div>;
+  const t = useTranslations("homepage");
+  return (
+    <DashboardPage>
+      <PageHeading pageName={t("heading")} />
+    </DashboardPage>
+  );
 }
