@@ -3,7 +3,7 @@ import PageHeading from "@/components/common/PageHeading";
 import Home from "@/components/home/Home";
 import { useTranslations } from "next-intl";
 
-const page = () => {
+const Page = () => {
   const t = useTranslations("homepage");
   return (
     <DashboardPage>
@@ -13,4 +13,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
