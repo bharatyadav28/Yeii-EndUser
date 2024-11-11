@@ -288,53 +288,11 @@
   "profilePage": {
     "profile": "Profile",
 
-    "manageBusinessProfile": "Manage business profile",
-
-    "myTransaction": "My Transaction",
-    "transaction": "Transaction",
-    "today": "Today",
-    "yesterday": "Yesterday",
-
-    "myCoupon": "My coupon",
-    "create_new_coupon": "Create new coupon",
-    "coupons": "Coupons",
-    "save": "Save",
-    "desc": "discount on this coupon",
-    "expiry_on": "Expiry on",
-    "edit": "Edit",
-    "delete": "Delete",
-    "coupon_details": "Coupon details",
-    "edit_coupon": "Edit Coupon details",
-    "coupon_name": "Coupon name",
-    "coupon_name_placeholder": "Enter coupon name",
-    "Coupon_description": "Coupon Description",
-    "coupon_description_placeholder": "Enter description",
-    "discount": "Discount",
-    "discount_placeholder": "Enter price",
-    "discounted_price": "Discounted price",
-    "discounted_price_placeholder": "Enter price",
-    "expiry_date": "Expiry date",
-    "usage_limit": "Usage Limits for Users",
-    "generate_coupon": "Generate coupon",
-    "save_changes": "Save changes",
-    "delete_coupon": "Delete coupon ?",
-    "delete_coupon_description": "Are you sure you want to delete your coupon?",
-
-    "settings": "Settings",
     "notifications": "Notifications",
 
-    "business_availability": "Business Availability",
-    "bus_avail_desc": "Choose the Business availability that will Shown to the customers",
-    "availability": "Availability",
-    "available": "Available",
-    "unavailable": "Unavailable",
-    "all_day": "All Day",
-    "custom_days": "Custom days",
-    "select_date_time": "Select days and time as you prefer",
-    "opening": "Opening",
-    "closing": "Closing",
-    "open": "Open",
-    "close": "Close",
+    "manage_account": "Manage account",
+
+    "settings": "Settings",
 
     "language": "Language",
     "reset_Password": "Reset Password",
@@ -342,13 +300,12 @@
     "delete_account": "Delete account",
     "delete_account_desc": "Are you sure you want to Delete your account?",
 
-    "settlementPolicy": "Settlement Policy",
+    "privacy_policy": "Privacy policy",
     "p1": "Your use of the App is also governed by our Privacy Policy [Link to Privacy Policy], which outlines how we collect, use, and disclose your personal information.",
     "p2": "By continuing to use the 'Brincos Dieras' App, you acknowledge that you have read, understood, and agreed to these Terms of Use. If you have any questions or concerns, please contact us at [Your Contact Information].",
     "p3": "Thank you for choosing 'Brincos Dieras' to showcase your business ideas!",
 
-    "termsAndConditions": "Terms and conditions",
-    "privacyPolicy": "Privacy policy",
+    "termsAndConditions": "Terms and Conditions",
     "welcomeTo": "Welcome to",
     "t1": "These Terms of Use govern your use of the `Brincos Dieras`mobile application provided by us. By accessing or using the App, you agree to comply with and be bound by these terms. If you do not agree with these terms, please do not use the App",
     "h1": "Acceptance of Terms",
@@ -365,16 +322,6 @@
     "logout": "Logout",
     "logoutDescription": "Are you sure you want to logout?",
     "cancel": "Cancel",
-    "confirm": "Confirm",
-
-    "Monday": "Monday",
-    "Tuesday": "Tuesday",
-    "Wednesday": "Wednesday",
-    "Thursday": "Thursday",
-    "Friday": "Friday",
-    "Saturday": "Saturday",
-    "Sunday": "Sunday",
-
-    "filter": "Filter"
+    "confirm": "Confirm"
   }
 }
