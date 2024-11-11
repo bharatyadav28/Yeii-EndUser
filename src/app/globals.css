@@ -96,6 +96,17 @@ body {
   animation: slide 0.6s ease-out;
 }
 
+.dark-btn,
+.dark-btn:hover {
+  background-color: var(--main-pink) !important;
+}
+
+.light-btn,
+.light-btn:hover {
+  background-color: var(--light-gray) !important;
+  color: black;
+}
+
 .app-name {
   background: linear-gradient(96deg, #f63093 2.51%, #2c3e95 29.16%);
   background-clip: text;

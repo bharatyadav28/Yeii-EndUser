@@ -1,13 +1,14 @@
 "use client";
 
-import { locationIcon } from "@/lib/svg_icons";
+import { locationIcon, profileBg } from "@/lib/svg_icons";
 import { CalendarIcon, ChevronDown } from "lucide-react";
 import React, { useState } from "react";
 import LocationSidebar from "../common/LocationSidebar";
 import { SearchInput } from "../common/customInput";
 import CustomDialog from "../common/CustomDialog";
-import { Calendar } from "../ui/calendar";
 import { useTranslations } from "next-intl";
+import Calendar from "../common/Calender";
+import { DarkButton, LightButton } from "../common/CustomButtons";
 
 const CustomHeader = () => {
   const [open, setOpen] = useState(false);
@@ -21,6 +22,11 @@ const CustomHeader = () => {
 
   const handleOpen = () => {
     setOpenDialog((prev) => !prev);
+  };
+
+  const handleCalenderSearch = () => {
+    console.log(date);
+    handleOpen();
   };
   return (
     <>
@@ -56,18 +62,33 @@ const CustomHeader = () => {
       </div>
       <LocationSidebar open={open} onOpenChange={handleClick} />
       <CustomDialog
-        className="w-[320px]"
+        className="w-[320px] "
         open={openDialog}
         handleOpen={handleOpen}
         title={t("title")}
       >
+        <p className="text-[0.67rem] text-[var(--main-gray)] text-center  ">
+          {t("subHeading")}
+        </p>
         <Calendar
-          mode="single"
-          selected={date}
-          onSelect={setDate}
-          className="rounded-md "
-          classNames={{}}
+          selectedDate={date}
+          setSelectedDate={(date) => setDate(date)}
+          expanded={true}
         />
+        <div className="flex justify-end gap-1">
+          <LightButton
+            onClick={handleOpen}
+            className="border-2 p-1 w-20 text-xs rounded-2xl"
+          >
+            Cancel
+          </LightButton>
+          <DarkButton
+            onClick={handleCalenderSearch}
+            className="p-1 w-20 text-xs rounded-2xl"
+          >
+            Continue
+          </DarkButton>
+        </div>
       </CustomDialog>
     </>
   );

@@ -34,7 +34,7 @@ function CustomDialog({
                 <BackwardButton onClick={handleOpen} />
               </div>
             )}
-            <div className=" mt-2 font-semibold "> {title}</div>
+            <div className=" mt-2 text-lg font-semibold "> {title}</div>
             <div className="absolute right-0 top-2 ">{titleRightContent}</div>
           </div>
           {children}
