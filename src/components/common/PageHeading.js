@@ -1,15 +1,16 @@
 import { useTranslations } from "next-intl";
+import CustomHeader from "../home/CustomHeader";
 
 // Page heading
-const PageHeading = ({ pageName, leftContent }) => {
+const PageHeading = ({ pageName, showHeader }) => {
   const t = useTranslations();
   return (
-    <div className=" flex justify-between items-center bg-[var(--light-gray)] p-6 pt-8">
-      <h1 className="text-2xl font-medium ">
+    <div className=" flex justify-between items-center bg-[var(--light-gray)] p-5 pt-7">
+      <h1 className="text-2xl font-medium p-2">
         <span className="text-[#00131F] mr-1 font-bold">{pageName}</span>
         <span className="text-[var(--medium-gray)]">{t("dashboard")}</span>
       </h1>
-      {/* {avalability && <AvalabilitySwitch />} */}
+      {showHeader && <CustomHeader />}
     </div>
   );
 };

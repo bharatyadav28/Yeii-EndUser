@@ -96,11 +96,28 @@
     "no_item_subHeading": "You dont have any new orders. Stay Tuned !",
     "go_to_store": "Go to store",
     "no_orders_heading": "You have no orders at this moment",
-    "no_orders_subHeading": "build your online store with brincos dieras and get orders."
+    "no_orders_subHeading": "build your online store with brincos dieras and get orders.",
+    "offers": "Offers",
+    "visit_shop": "Visit shop",
+    "view_all": "View all",
+    "top_services": "Our Top Services Categories",
+    "top_products": "Our Top Products Categories",
+    "decoration": "Decoration",
+    "animations": "Animations",
+    "photograph": "Photograph",
+    "event_room": "Event rooms"
+  },
+
+  "locationSidebar": {
+    "heading": "My Location",
+    "search_placeholder": "Search by area, street name..",
+    "use_my_location": "Use my current location",
+    "login_to_add": "Login to Add new address"
   },
 
   "calender": {
-    "title": "Calender",
+    "title": "Select Date",
+    "subHeading": "Please Select Date that you want",
     "Mon": "Mon",
     "Tue": "Tue",
     "Wed": "Wed",

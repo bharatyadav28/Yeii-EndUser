@@ -7,7 +7,7 @@ const Page = () => {
   const t = useTranslations("homepage");
   return (
     <DashboardPage>
-      <PageHeading pageName={t("heading")} />
+      <PageHeading pageName={t("heading")} showHeader={true} />
       <Home />
     </DashboardPage>
   );

@@ -1,3 +1,4 @@
+import { discountIcon } from "@/lib/svg_icons";
 import { ChevronRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -5,7 +6,7 @@ import React from "react";
 
 const OfferCard = ({ item }) => {
   return (
-    <div className="bg-white rounded-2xl flex justify-between items-center min-w-[32%] p-2">
+    <div className="relative bg-white rounded-2xl flex justify-between items-center w-[32%] p-2">
       <div className="flex flex-col gap-2 p-2">
         <div className="text-2xl text-[var(--lightblue)] font-bold ">
           {item.discount}Off{" "}
@@ -28,7 +29,12 @@ const OfferCard = ({ item }) => {
           Visit shop <ChevronRight size={14} />
         </Link>
       </div>
-      <Image src={item.image} alt={item.title} width={178} height={158} />
+      <div>
+        <Image src={item.image} alt={item.title} width={178} height={1} />
+        <div className="absolute bottom-4 right-5 text-[0.5rem] font-bold text-[var(--lightblue)] flex items-center gap-[2px] rounded-3xl p-1 px-2 bg-[#172E46] ">
+          {discountIcon} {item.discount}
+        </div>
+      </div>
     </div>
   );
 };
