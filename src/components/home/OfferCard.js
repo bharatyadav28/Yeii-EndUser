@@ -4,9 +4,14 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const OfferCard = ({ item }) => {
+const OfferCard = ({ item, className, path }) => {
   return (
-    <div className="relative bg-white rounded-2xl flex justify-between items-center w-[32%] p-2">
+    <div
+      className={
+        "relative bg-white rounded-2xl flex justify-between items-center p-2 " +
+        className
+      }
+    >
       <div className="flex flex-col gap-2 p-2">
         <div className="text-2xl text-[var(--lightblue)] font-bold ">
           {item.discount}Off{" "}
@@ -23,7 +28,7 @@ const OfferCard = ({ item }) => {
           {item.title}
         </div>
         <Link
-          href={item.link}
+          href={`/${path}/shop/${item.shopId}`}
           className="text-sm text-[var(--main-pink)] flex items-center gap-1 "
         >
           Visit shop <ChevronRight size={14} />

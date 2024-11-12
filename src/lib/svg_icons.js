@@ -287,7 +287,7 @@ export const noItemsIcon = (
         width="205.041"
         height="60.1027"
         filterUnits="userSpaceOnUse"
-        colorinterpolation-filters="sRGB"
+        colorinterpolationFilters="sRGB"
       >
         <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feBlend
@@ -308,7 +308,7 @@ export const noItemsIcon = (
         width="104.928"
         height="83.7148"
         filterUnits="userSpaceOnUse"
-        colorinterpolation-filters="sRGB"
+        colorinterpolationFilters="sRGB"
       >
         <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
@@ -343,7 +343,7 @@ export const noItemsIcon = (
         width="91.4044"
         height="131.552"
         filterUnits="userSpaceOnUse"
-        colorinterpolation-filters="sRGB"
+        colorinterpolationFilters="sRGB"
       >
         <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feBlend
@@ -797,9 +797,9 @@ export const noOrdersIcon = (
         width="181"
         height="58.9447"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feBlend
           mode="normal"
           in="SourceGraphic"
@@ -818,9 +818,9 @@ export const noOrdersIcon = (
         width="46.893"
         height="52.3281"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -853,9 +853,9 @@ export const noOrdersIcon = (
         width="46.893"
         height="52.3281"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -888,9 +888,9 @@ export const noOrdersIcon = (
         width="79.7816"
         height="45.8461"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feBlend
           mode="normal"
           in="SourceGraphic"
@@ -910,8 +910,8 @@ export const noOrdersIcon = (
         y2="90.4201"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#ABCCFF" />
-        <stop offset="1" stop-color="#70A8FF" />
+        <stop stopColor="#ABCCFF" />
+        <stop offset="1" stopColor="#70A8FF" />
       </linearGradient>
       <linearGradient
         id="paint1_linear_1067_49253"
@@ -921,8 +921,8 @@ export const noOrdersIcon = (
         y2="90.4143"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#70A8FF" />
-        <stop offset="1" stop-color="#5597FD" />
+        <stop stopColor="#70A8FF" />
+        <stop offset="1" stopColor="#5597FD" />
       </linearGradient>
       <linearGradient
         id="paint2_linear_1067_49253"
@@ -932,8 +932,8 @@ export const noOrdersIcon = (
         y2="55.1234"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#EDF4FF" />
-        <stop offset="1" stop-color="#ABCCFF" />
+        <stop stopColor="#EDF4FF" />
+        <stop offset="1" stopColor="#ABCCFF" />
       </linearGradient>
       <linearGradient
         id="paint3_linear_1067_49253"
@@ -943,8 +943,8 @@ export const noOrdersIcon = (
         y2="90.4203"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#2A64BE" />
-        <stop offset="1" stop-color="#6095E7" />
+        <stop stopColor="#2A64BE" />
+        <stop offset="1" stopColor="#6095E7" />
       </linearGradient>
       <linearGradient
         id="paint4_linear_1067_49253"
@@ -954,8 +954,8 @@ export const noOrdersIcon = (
         y2="120.666"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#EDF4FF" />
-        <stop offset="1" stop-color="#ABCCFF" />
+        <stop stopColor="#EDF4FF" />
+        <stop offset="1" stopColor="#ABCCFF" />
       </linearGradient>
       <linearGradient
         id="paint5_linear_1067_49253"
@@ -965,8 +965,8 @@ export const noOrdersIcon = (
         y2="131.373"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#EDF4FF" />
-        <stop offset="1" stop-color="#ABCCFF" />
+        <stop stopColor="#EDF4FF" />
+        <stop offset="1" stopColor="#ABCCFF" />
       </linearGradient>
       <linearGradient
         id="paint6_linear_1067_49253"
@@ -976,8 +976,8 @@ export const noOrdersIcon = (
         y2="111.256"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#EDF4FF" />
-        <stop offset="1" stop-color="#ABCCFF" />
+        <stop stopColor="#EDF4FF" />
+        <stop offset="1" stopColor="#ABCCFF" />
       </linearGradient>
       <linearGradient
         id="paint7_linear_1067_49253"
@@ -987,8 +987,8 @@ export const noOrdersIcon = (
         y2="90.4201"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#ABCCFF" />
-        <stop offset="1" stop-color="#70A8FF" />
+        <stop stopColor="#ABCCFF" />
+        <stop offset="1" stopColor="#70A8FF" />
       </linearGradient>
       <linearGradient
         id="paint8_linear_1067_49253"
@@ -998,8 +998,8 @@ export const noOrdersIcon = (
         y2="166.742"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#ABCCFF" />
-        <stop offset="1" stop-color="#70A8FF" />
+        <stop stopColor="#ABCCFF" />
+        <stop offset="1" stopColor="#70A8FF" />
       </linearGradient>
       <linearGradient
         id="paint9_linear_1067_49253"
@@ -1009,8 +1009,8 @@ export const noOrdersIcon = (
         y2="144.353"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#ABCCFF" />
-        <stop offset="1" stop-color="#70A8FF" />
+        <stop stopColor="#ABCCFF" />
+        <stop offset="1" stopColor="#70A8FF" />
       </linearGradient>
       <linearGradient
         id="paint10_linear_1067_49253"
@@ -1020,8 +1020,8 @@ export const noOrdersIcon = (
         y2="132.024"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#70A8FF" />
-        <stop offset="1" stop-color="#5597FD" />
+        <stop stopColor="#70A8FF" />
+        <stop offset="1" stopColor="#5597FD" />
       </linearGradient>
       <linearGradient
         id="paint11_linear_1067_49253"
@@ -1031,8 +1031,8 @@ export const noOrdersIcon = (
         y2="114.836"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#70A8FF" />
-        <stop offset="1" stop-color="#5597FD" />
+        <stop stopColor="#70A8FF" />
+        <stop offset="1" stopColor="#5597FD" />
       </linearGradient>
       <linearGradient
         id="paint12_linear_1067_49253"
@@ -1042,8 +1042,8 @@ export const noOrdersIcon = (
         y2="114.836"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#ABCCFF" />
-        <stop offset="1" stop-color="#70A8FF" />
+        <stop stopColor="#ABCCFF" />
+        <stop offset="1" stopColor="#70A8FF" />
       </linearGradient>
       <linearGradient
         id="paint13_linear_1067_49253"
@@ -1053,8 +1053,8 @@ export const noOrdersIcon = (
         y2="112.313"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#70A8FF" />
-        <stop offset="1" stop-color="#5597FD" />
+        <stop stopColor="#70A8FF" />
+        <stop offset="1" stopColor="#5597FD" />
       </linearGradient>
       <linearGradient
         id="paint14_linear_1067_49253"
@@ -1064,8 +1064,8 @@ export const noOrdersIcon = (
         y2="73.9602"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#C6DDFF" />
-        <stop offset="1" stop-color="white" />
+        <stop stopColor="#C6DDFF" />
+        <stop offset="1" stopColor="white" />
       </linearGradient>
       <linearGradient
         id="paint15_linear_1067_49253"
@@ -1075,8 +1075,8 @@ export const noOrdersIcon = (
         y2="60.9817"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#C6DDFF" />
-        <stop offset="1" stop-color="white" />
+        <stop stopColor="#C6DDFF" />
+        <stop offset="1" stopColor="white" />
       </linearGradient>
       <linearGradient
         id="paint16_linear_1067_49253"
@@ -1086,8 +1086,8 @@ export const noOrdersIcon = (
         y2="74.0704"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#EDF4FF" />
-        <stop offset="1" stop-color="#ABCCFF" />
+        <stop stopColor="#EDF4FF" />
+        <stop offset="1" stopColor="#ABCCFF" />
       </linearGradient>
       <linearGradient
         id="paint17_linear_1067_49253"
@@ -1097,8 +1097,8 @@ export const noOrdersIcon = (
         y2="61.0919"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#EDF4FF" />
-        <stop offset="1" stop-color="#ABCCFF" />
+        <stop stopColor="#EDF4FF" />
+        <stop offset="1" stopColor="#ABCCFF" />
       </linearGradient>
       <linearGradient
         id="paint18_linear_1067_49253"
@@ -1108,8 +1108,8 @@ export const noOrdersIcon = (
         y2="106.065"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#2A64BE" />
-        <stop offset="1" stop-color="#4B80D1" />
+        <stop stopColor="#2A64BE" />
+        <stop offset="1" stopColor="#4B80D1" />
       </linearGradient>
       <linearGradient
         id="paint19_linear_1067_49253"
@@ -1119,8 +1119,8 @@ export const noOrdersIcon = (
         y2="90.258"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#EDF4FF" />
-        <stop offset="1" stop-color="#ABCCFF" />
+        <stop stopColor="#EDF4FF" />
+        <stop offset="1" stopColor="#ABCCFF" />
       </linearGradient>
       <linearGradient
         id="paint20_linear_1067_49253"
@@ -1130,8 +1130,8 @@ export const noOrdersIcon = (
         y2="34.6818"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#EDF4FF" />
-        <stop offset="1" stop-color="#ABCCFF" />
+        <stop stopColor="#EDF4FF" />
+        <stop offset="1" stopColor="#ABCCFF" />
       </linearGradient>
       <linearGradient
         id="paint21_linear_1067_49253"
@@ -1141,8 +1141,8 @@ export const noOrdersIcon = (
         y2="136.803"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.09375" stop-color="#2A64BE" />
-        <stop offset="1" stop-color="#2A64BE" stop-opacity="0" />
+        <stop offset="0.09375" stopColor="#2A64BE" />
+        <stop offset="1" stopColor="#2A64BE" stopOpacity="0" />
       </linearGradient>
       <linearGradient
         id="paint22_linear_1067_49253"
@@ -1152,8 +1152,8 @@ export const noOrdersIcon = (
         y2="136.274"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.09375" stop-color="#2A64BE" />
-        <stop offset="1" stop-color="#2A64BE" stop-opacity="0" />
+        <stop offset="0.09375" stopColor="#2A64BE" />
+        <stop offset="1" stopColor="#2A64BE" stopOpacity="0" />
       </linearGradient>
       <linearGradient
         id="paint23_linear_1067_49253"
@@ -1163,8 +1163,8 @@ export const noOrdersIcon = (
         y2="148.121"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.09375" stop-color="#265FB8" />
-        <stop offset="1" stop-color="#84B4FF" />
+        <stop offset="0.09375" stopColor="#265FB8" />
+        <stop offset="1" stopColor="#84B4FF" />
       </linearGradient>
       <linearGradient
         id="paint24_linear_1067_49253"
@@ -1174,8 +1174,8 @@ export const noOrdersIcon = (
         y2="66.0649"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#FF698D" />
-        <stop offset="1" stop-color="#FF3868" />
+        <stop stopColor="#FF698D" />
+        <stop offset="1" stopColor="#FF3868" />
       </linearGradient>
       <linearGradient
         id="paint25_linear_1067_49253"
@@ -1185,8 +1185,8 @@ export const noOrdersIcon = (
         y2="40.1964"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#94BFFF" />
-        <stop offset="1" stop-color="#4C94FE" />
+        <stop stopColor="#94BFFF" />
+        <stop offset="1" stopColor="#4C94FE" />
       </linearGradient>
       <linearGradient
         id="paint26_linear_1067_49253"
@@ -1196,8 +1196,8 @@ export const noOrdersIcon = (
         y2="170.772"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#94BFFF" />
-        <stop offset="1" stop-color="#4C94FE" />
+        <stop stopColor="#94BFFF" />
+        <stop offset="1" stopColor="#4C94FE" />
       </linearGradient>
       <linearGradient
         id="paint27_linear_1067_49253"
@@ -1207,8 +1207,8 @@ export const noOrdersIcon = (
         y2="126.982"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#70A8FF" />
-        <stop offset="1" stop-color="#5597FD" />
+        <stop stopColor="#70A8FF" />
+        <stop offset="1" stopColor="#5597FD" />
       </linearGradient>
       <linearGradient
         id="paint28_linear_1067_49253"
@@ -1218,8 +1218,8 @@ export const noOrdersIcon = (
         y2="121.38"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#70A8FF" />
-        <stop offset="1" stop-color="#5597FD" />
+        <stop stopColor="#70A8FF" />
+        <stop offset="1" stopColor="#5597FD" />
       </linearGradient>
       <linearGradient
         id="paint29_linear_1067_49253"
@@ -1229,8 +1229,8 @@ export const noOrdersIcon = (
         y2="28.5791"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#70A8FF" />
-        <stop offset="1" stop-color="#5597FD" />
+        <stop stopColor="#70A8FF" />
+        <stop offset="1" stopColor="#5597FD" />
       </linearGradient>
       <linearGradient
         id="paint30_linear_1067_49253"
@@ -1240,8 +1240,8 @@ export const noOrdersIcon = (
         y2="180.348"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#70A8FF" />
-        <stop offset="1" stop-color="#5597FD" />
+        <stop stopColor="#70A8FF" />
+        <stop offset="1" stopColor="#5597FD" />
       </linearGradient>
     </defs>
   </svg>
@@ -1349,8 +1349,8 @@ export const noNotificationIcon = (
         y2="144.808"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.0844027" stop-color="#FFBEBD" />
-        <stop offset="1" stop-color="#FFF6F5" />
+        <stop offset="0.0844027" stopColor="#FFBEBD" />
+        <stop offset="1" stopColor="#FFF6F5" />
       </linearGradient>
       <linearGradient
         id="paint1_linear_1067_49766"
@@ -1360,8 +1360,8 @@ export const noNotificationIcon = (
         y2="3.01053"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#FF9999" />
-        <stop offset="1" stop-color="#FFE7DA" />
+        <stop stopColor="#FF9999" />
+        <stop offset="1" stopColor="#FFE7DA" />
       </linearGradient>
       <linearGradient
         id="paint2_linear_1067_49766"
@@ -1371,8 +1371,8 @@ export const noNotificationIcon = (
         y2="77.5754"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#FFDEAC" />
-        <stop offset="0.70369" stop-color="#FF426F" />
+        <stop stopColor="#FFDEAC" />
+        <stop offset="0.70369" stopColor="#FF426F" />
       </linearGradient>
       <linearGradient
         id="paint3_linear_1067_49766"
@@ -1382,8 +1382,8 @@ export const noNotificationIcon = (
         y2="32.7848"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#FF9999" />
-        <stop offset="1" stop-color="#FFE7DA" />
+        <stop stopColor="#FF9999" />
+        <stop offset="1" stopColor="#FFE7DA" />
       </linearGradient>
       <linearGradient
         id="paint4_linear_1067_49766"
@@ -1393,8 +1393,8 @@ export const noNotificationIcon = (
         y2="59.5746"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#FFBEBD" />
-        <stop offset="1" stop-color="#FFF6F5" />
+        <stop stopColor="#FFBEBD" />
+        <stop offset="1" stopColor="#FFF6F5" />
       </linearGradient>
       <linearGradient
         id="paint5_linear_1067_49766"
@@ -1404,8 +1404,8 @@ export const noNotificationIcon = (
         y2="72.4267"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#FFDEAC" />
-        <stop offset="1" stop-color="#FF426F" />
+        <stop stopColor="#FFDEAC" />
+        <stop offset="1" stopColor="#FF426F" />
       </linearGradient>
       <linearGradient
         id="paint6_linear_1067_49766"
@@ -1415,8 +1415,8 @@ export const noNotificationIcon = (
         y2="56.1106"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#FF9999" />
-        <stop offset="1" stop-color="#FFE7DA" />
+        <stop stopColor="#FF9999" />
+        <stop offset="1" stopColor="#FFE7DA" />
       </linearGradient>
       <linearGradient
         id="paint7_linear_1067_49766"
@@ -1426,8 +1426,8 @@ export const noNotificationIcon = (
         y2="92.3682"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#FF9999" />
-        <stop offset="1" stop-color="#FFE7DA" />
+        <stop stopColor="#FF9999" />
+        <stop offset="1" stopColor="#FFE7DA" />
       </linearGradient>
       <linearGradient
         id="paint8_linear_1067_49766"
@@ -1437,8 +1437,8 @@ export const noNotificationIcon = (
         y2="85.9192"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#FF9999" />
-        <stop offset="1" stop-color="#FFE7DA" />
+        <stop stopColor="#FF9999" />
+        <stop offset="1" stopColor="#FFE7DA" />
       </linearGradient>
       <linearGradient
         id="paint9_linear_1067_49766"
@@ -1448,8 +1448,8 @@ export const noNotificationIcon = (
         y2="61.2427"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#FF9999" />
-        <stop offset="1" stop-color="#FFE7DA" />
+        <stop stopColor="#FF9999" />
+        <stop offset="1" stopColor="#FFE7DA" />
       </linearGradient>
     </defs>
   </svg>
@@ -1784,9 +1784,9 @@ export const sidebarBg = (
         width="502"
         height="502"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feBlend
           mode="normal"
           in="SourceGraphic"
@@ -1805,9 +1805,9 @@ export const sidebarBg = (
         width="282"
         height="282"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feBlend
           mode="normal"
           in="SourceGraphic"
@@ -1826,9 +1826,9 @@ export const sidebarBg = (
         width="373"
         height="373"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feBlend
           mode="normal"
           in="SourceGraphic"
@@ -1847,9 +1847,9 @@ export const sidebarBg = (
         width="910"
         height="1817"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feGaussianBlur in="BackgroundImageFix" stdDeviation="130" />
         <feComposite
           in2="SourceAlpha"
@@ -1876,7 +1876,7 @@ export const homeIcon = ({ isSelected }) =>
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clip-path="url(#clip0_3085_2487)">
+      <g clipPath="url(#clip0_3085_2487)">
         <path
           fillRule="evenodd"
           clipRule="evenodd"
@@ -1903,7 +1903,7 @@ export const homeIcon = ({ isSelected }) =>
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clip-path="url(#clip0_3085_4333)">
+      <g clipPath="url(#clip0_3085_4333)">
         <path
           fillRule="evenodd"
           clipRule="evenodd"
@@ -1935,8 +1935,8 @@ export const ordersIcon = ({ isSelected }) =>
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M2.59368 1.99L1.53668 5.378C1.36098 5.67886 1.24423 6.01044 1.19268 6.355L1.09068 7.033C0.69511 9.66468 0.732266 12.3433 1.20068 14.963C1.29321 15.4802 1.55194 15.9531 1.93762 16.3099C2.3233 16.6667 2.81486 16.8879 3.33768 16.94L4.56768 17.063C7.51568 17.355 10.4837 17.355 13.4307 17.063L14.6607 16.941C15.1838 16.8891 15.6757 16.6678 16.0616 16.3108C16.4475 15.9538 16.7063 15.4805 16.7987 14.963C17.2677 12.343 17.3047 9.665 16.9087 7.033L16.8067 6.355C16.7532 5.99652 16.6291 5.6522 16.4417 5.342L15.4047 1.995C15.2731 1.57002 15.0232 1.19131 14.6843 0.903172C14.3453 0.615038 13.9313 0.429407 13.4907 0.368003C10.5107 -0.0465977 7.48766 -0.0465977 4.50768 0.368003C4.0677 0.429124 3.65417 0.614056 3.31529 0.901237C2.97641 1.18842 2.72614 1.56602 2.59368 1.99ZM13.2837 1.853C10.4407 1.45745 7.55665 1.45745 4.71368 1.853C4.55544 1.87514 4.40676 1.94179 4.28495 2.04519C4.16314 2.14858 4.07323 2.28447 4.02568 2.437L3.52468 4.043C3.56168 4.038 3.59968 4.033 3.63768 4.03L4.61568 3.933C7.53168 3.643 10.4677 3.643 13.3837 3.933L14.3617 4.03C14.3977 4.033 14.4327 4.038 14.4687 4.042L13.9717 2.438C13.9245 2.28516 13.8347 2.14894 13.7129 2.04532C13.591 1.94171 13.4421 1.87499 13.2837 1.853ZM12.9997 8.75C13.1986 8.75 13.3894 8.67099 13.53 8.53033C13.6707 8.38968 13.7497 8.19892 13.7497 8C13.7497 7.80109 13.6707 7.61033 13.53 7.46967C13.3894 7.32902 13.1986 7.25 12.9997 7.25H4.99968C4.80077 7.25 4.61 7.32902 4.46935 7.46967C4.3287 7.61033 4.24968 7.80109 4.24968 8C4.24968 8.19892 4.3287 8.38968 4.46935 8.53033C4.61 8.67099 4.80077 8.75 4.99968 8.75H12.9997Z"
         fill="white"
       />
@@ -2098,8 +2098,8 @@ export const videoIcon = (
     xmlns="http://www.w3.org/2000/svg"
   >
     <path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M15.9279 1.03196C12.7577 0.700844 9.56286 0.676159 6.38786 0.958247L4.26755 1.14723C3.41673 1.22353 2.61645 1.58431 1.99587 2.17134C1.37529 2.75836 0.970619 3.53737 0.84718 4.38264C0.342607 7.83111 0.342607 11.3347 0.84718 14.7831C0.970904 15.6285 1.37584 16.4076 1.99664 16.9946C2.61745 17.5816 3.41792 17.9423 4.26889 18.0186L6.3892 18.2062C9.56415 18.4887 12.7589 18.4645 15.9292 18.1338L16.7441 18.048C17.553 17.9632 18.3136 17.6219 18.9147 17.0741C19.5159 16.5262 19.9261 15.8005 20.0854 15.0029L24.1692 17.1715C24.3159 17.2494 24.4795 17.2897 24.6455 17.289C24.8115 17.2882 24.9748 17.2463 25.1206 17.1671C25.2665 17.0878 25.3905 16.9737 25.4815 16.8348C25.5725 16.696 25.6277 16.5368 25.6422 16.3714L25.6757 15.9907C26.0478 11.7265 26.0478 7.43795 25.6757 3.17372L25.6422 2.79308C25.6276 2.62762 25.5723 2.46834 25.4811 2.3295C25.3899 2.19066 25.2658 2.07657 25.1197 1.99745C24.9737 1.91832 24.8103 1.87661 24.6442 1.87606C24.4781 1.87551 24.3145 1.91612 24.1679 1.99428L20.0854 4.16283C19.9261 3.36528 19.5159 2.63957 18.9147 2.09173C18.3136 1.54388 17.553 1.2026 16.7441 1.11774L15.9279 1.03196ZM6.56746 2.96061C9.6126 2.6886 12.6769 2.71239 15.7175 3.03165L16.5324 3.11742C16.9305 3.15958 17.3033 3.33299 17.5921 3.61034C17.8809 3.88769 18.0691 4.25322 18.1273 4.64935C18.6071 7.92096 18.6071 11.2435 18.1273 14.5164C18.0691 14.9126 17.8809 15.2781 17.5921 15.5554C17.3033 15.8328 16.9305 16.0062 16.5324 16.0484L15.7175 16.1341C12.6769 16.4534 9.6126 16.4772 6.56746 16.2052L4.44715 16.0149C4.04642 15.9791 3.66942 15.8094 3.37691 15.5332C3.0844 15.257 2.89344 14.8903 2.8348 14.4923C2.35843 11.2367 2.35843 7.92909 2.8348 4.67348C2.89293 4.27512 3.08371 3.90801 3.37629 3.63148C3.66886 3.35495 4.04615 3.18518 4.44715 3.14959L6.56746 2.96061ZM20.3481 6.29923C20.5478 8.48387 20.5478 10.6819 20.3481 12.8666L23.7618 14.6799C24.0059 11.2863 24.0059 7.87949 23.7618 4.48584L20.3481 6.29923Z"
       fill="#FFDC12"
     />
@@ -2115,14 +2115,14 @@ export const cameraIcon = (
     xmlns="http://www.w3.org/2000/svg"
   >
     <path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M7.90234 11.9826C7.90234 10.6451 8.43368 9.36235 9.37946 8.41657C10.3252 7.47079 11.608 6.93945 12.9455 6.93945C14.2831 6.93945 15.5658 7.47079 16.5116 8.41657C17.4574 9.36235 17.9887 10.6451 17.9887 11.9826C17.9887 13.3202 17.4574 14.6029 16.5116 15.5487C15.5658 16.4945 14.2831 17.0258 12.9455 17.0258C11.608 17.0258 10.3252 16.4945 9.37946 15.5487C8.43368 14.6029 7.90234 13.3202 7.90234 11.9826ZM12.9455 8.95673C12.143 8.95673 11.3734 9.27553 10.8059 9.84299C10.2384 10.4105 9.91962 11.1801 9.91962 11.9826C9.91962 12.7852 10.2384 13.5548 10.8059 14.1223C11.3734 14.6897 12.143 15.0085 12.9455 15.0085C13.748 15.0085 14.5177 14.6897 15.0852 14.1223C15.6526 13.5548 15.9714 12.7852 15.9714 11.9826C15.9714 11.1801 15.6526 10.4105 15.0852 9.84299C14.5177 9.27553 13.748 8.95673 12.9455 8.95673Z"
       fill="#FFDC12"
     />
     <path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M11.0858 2.23309C10.7515 2.23274 10.4205 2.29831 10.1117 2.42606C9.80278 2.5538 9.52214 2.74121 9.2858 2.97756C9.04945 3.2139 8.86205 3.49454 8.7343 3.80341C8.60655 4.11228 8.54098 4.44331 8.54134 4.77755C8.5411 5.20949 8.37849 5.62556 8.08578 5.94319C7.79306 6.26082 7.39162 6.4568 6.96114 6.49223L3.96213 6.7343C3.67533 6.7574 3.40409 6.87419 3.19022 7.06667C2.97635 7.25915 2.83174 7.51663 2.77866 7.79942C2.17512 10.9866 2.13052 14.2544 2.64686 17.4568L2.77731 18.2691C2.90104 19.0356 3.53177 19.6206 4.30641 19.6838L6.91945 19.8963C10.9313 20.222 14.9629 20.222 18.9747 19.8963L21.5864 19.6838C21.963 19.6534 22.3186 19.4974 22.5961 19.2409C22.8735 18.9844 23.0569 18.6422 23.1168 18.2691L23.2473 17.4568C23.7632 14.2543 23.7181 10.9865 23.1141 7.79942C23.0608 7.51688 22.916 7.2597 22.7022 7.06748C22.4884 6.87527 22.2173 6.75867 21.9306 6.73565L18.933 6.49223C18.5025 6.4568 18.1011 6.26082 17.8083 5.94319C17.5156 5.62556 17.353 5.20949 17.3528 4.77755C17.3531 4.44331 17.2876 4.11228 17.1598 3.80341C17.0321 3.49454 16.8447 3.2139 16.6083 2.97756C16.372 2.74121 16.0913 2.5538 15.7825 2.42606C15.4736 2.29831 15.1426 2.23274 14.8083 2.23309H11.0858ZM6.53213 4.5032C6.60236 3.34303 7.11265 2.25339 7.95889 1.45664C8.80512 0.65989 9.9235 0.216095 11.0858 0.21582H14.8083C17.2358 0.21582 19.2194 2.11206 19.362 4.5032L22.0947 4.7251C22.8217 4.78378 23.5093 5.07973 24.0517 5.56742C24.594 6.0551 24.9611 6.7075 25.0964 7.42421C25.7433 10.8401 25.7917 14.3435 25.239 17.7769L25.1085 18.5905C24.9767 19.409 24.5743 20.1596 23.9655 20.7223C23.3567 21.285 22.5767 21.6273 21.7504 21.6944L19.1387 21.9069C15.0177 22.2408 10.8764 22.2408 6.75538 21.9069L4.14368 21.6944C3.31738 21.6273 2.53745 21.285 1.92866 20.7223C1.31987 20.1596 0.917383 19.409 0.785594 18.5905L0.655143 17.7769C0.102115 14.3438 0.150352 10.8407 0.797697 7.42421C0.933222 6.70759 1.30036 6.05532 1.84268 5.56768C2.38499 5.08003 3.07246 4.784 3.7994 4.7251L6.53213 4.5032Z"
       fill="#FFDC12"
     />
@@ -2296,7 +2296,7 @@ export const discountIcon = (
       x2="7.91611"
       y2="4.82284"
       stroke="white"
-      stroke-width="0.385059"
+      strokeWidth="0.385059"
     />
     <path
       d="M6.25544 5.08793C6.25544 5.58414 5.85318 5.9864 5.35697 5.9864C4.86076 5.9864 4.4585 5.58414 4.4585 5.08793C4.4585 4.59171 4.86076 4.18945 5.35697 4.18945C5.85318 4.18945 6.25544 4.59171 6.25544 5.08793ZM4.89524 5.08793C4.89524 5.34293 5.10196 5.54965 5.35697 5.54965C5.61197 5.54965 5.81869 5.34293 5.81869 5.08793C5.81869 4.83292 5.61197 4.6262 5.35697 4.6262C5.10196 4.6262 4.89524 4.83292 4.89524 5.08793Z"
@@ -2320,6 +2320,20 @@ export const locationIcon = (
     <path
       d="M10.1577 10.1612C11.2737 9.04466 11.9006 7.53066 11.9006 5.95205C11.9006 4.37344 11.2737 2.85944 10.1577 1.74291C9.60523 1.19034 8.94929 0.752018 8.22737 0.452969C7.50545 0.153919 6.7317 0 5.95029 0C5.16888 0 4.39513 0.153919 3.67321 0.452969C2.9513 0.752018 2.29536 1.19034 1.74285 1.74291C0.62689 2.85944 0 4.37344 0 5.95205C0 7.53066 0.62689 9.04466 1.74285 10.1612L3.03568 11.4353L4.77221 13.1226L4.88525 13.2229C5.544 13.7566 6.50873 13.7226 7.12922 13.1226L9.19895 11.1081L10.1577 10.1612ZM5.95029 8.49947C5.274 8.49947 4.6254 8.23081 4.14719 7.7526C3.66898 7.27439 3.40032 6.62579 3.40032 5.9495C3.40032 5.27321 3.66898 4.62461 4.14719 4.1464C4.6254 3.66819 5.274 3.39953 5.95029 3.39953C6.62658 3.39953 7.27518 3.66819 7.75339 4.1464C8.2316 4.62461 8.50026 5.27321 8.50026 5.9495C8.50026 6.62579 8.2316 7.27439 7.75339 7.7526C7.27518 8.23081 6.62658 8.49947 5.95029 8.49947Z"
       fill="#F63093"
+    />
+  </svg>
+);
+export const locationIconBlack = (
+  <svg
+    width="12"
+    height="14"
+    viewBox="0 0 12 14"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M10.1577 10.1612C11.2737 9.04466 11.9006 7.53066 11.9006 5.95205C11.9006 4.37344 11.2737 2.85944 10.1577 1.74291C9.60523 1.19034 8.94929 0.752018 8.22737 0.452969C7.50545 0.153919 6.7317 0 5.95029 0C5.16888 0 4.39513 0.153919 3.67321 0.452969C2.9513 0.752018 2.29536 1.19034 1.74285 1.74291C0.62689 2.85944 0 4.37344 0 5.95205C0 7.53066 0.62689 9.04466 1.74285 10.1612L3.03568 11.4353L4.77221 13.1226L4.88525 13.2229C5.544 13.7566 6.50873 13.7226 7.12922 13.1226L9.19895 11.1081L10.1577 10.1612ZM5.95029 8.49947C5.274 8.49947 4.6254 8.23081 4.14719 7.7526C3.66898 7.27439 3.40032 6.62579 3.40032 5.9495C3.40032 5.27321 3.66898 4.62461 4.14719 4.1464C4.6254 3.66819 5.274 3.39953 5.95029 3.39953C6.62658 3.39953 7.27518 3.66819 7.75339 4.1464C8.2316 4.62461 8.50026 5.27321 8.50026 5.9495C8.50026 6.62579 8.2316 7.27439 7.75339 7.7526C7.27518 8.23081 6.62658 8.49947 5.95029 8.49947Z"
+      fill="black"
     />
   </svg>
 );
@@ -2426,7 +2440,6 @@ export const profileBg = (
     viewBox="0 0 1339 277"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
-    className="blur-3xl"
   >
     <g filter="url(#filter0_f_1881_204786)">
       <circle cx="1114.5" cy="197.5" r="177.5" fill="#EB145A" />
@@ -2445,7 +2458,7 @@ export const profileBg = (
         height="1360"
         transform="rotate(90 1360 -40)"
         fill="white"
-        fill-opacity="0.02"
+        fillOpacity="0.02"
       />
     </g>
     <defs>
@@ -2456,9 +2469,9 @@ export const profileBg = (
         width="385"
         height="385"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feBlend
           mode="normal"
           in="SourceGraphic"
@@ -2477,9 +2490,9 @@ export const profileBg = (
         width="219"
         height="220"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feBlend
           mode="normal"
           in="SourceGraphic"
@@ -2498,9 +2511,9 @@ export const profileBg = (
         width="205"
         height="206"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feBlend
           mode="normal"
           in="SourceGraphic"
@@ -2519,9 +2532,9 @@ export const profileBg = (
         width="1760"
         height="790"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feGaussianBlur in="BackgroundImageFix" stdDeviation="100" />
         <feComposite
           in2="SourceAlpha"
@@ -2535,6 +2548,130 @@ export const profileBg = (
           result="shape"
         />
       </filter>
+    </defs>
+  </svg>
+);
+
+export const recentIcon = (
+  <svg
+    width="22"
+    height="22"
+    viewBox="0 0 22 22"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M11 7V11L12.5 12.5M18.545 15.453C20.182 16.337 21 16.78 21 17.5C21 18.22 20.182 18.663 18.545 19.547L17.431 20.148C16.174 20.827 15.546 21.166 15.244 20.92C14.504 20.315 15.657 18.756 15.94 18.204C16.228 17.644 16.222 17.346 15.94 16.796C15.657 16.244 14.504 14.685 15.244 14.08C15.546 13.834 16.174 14.173 17.431 14.852L18.545 15.453Z"
+      stroke="#00131F"
+      strokeOpacity="0.5"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M12.026 20.948C11.6887 20.982 11.3467 20.9993 11 21C5.477 21 1 16.523 1 11C1 5.477 5.477 1 11 1C16.523 1 21 5.477 21 11C20.9987 11.6867 20.932 12.3533 20.8 13"
+      stroke="#00131F"
+      strokeOpacity="0.5"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+);
+
+export const offersIcon = (
+  <svg
+    width="133"
+    height="109"
+    viewBox="0 0 133 109"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g id="Group 1171274904">
+      <g id="Group 1171274871">
+        <g id="Circles">
+          <circle
+            id="Ellipse 22"
+            cx="73.6766"
+            cy="59.9999"
+            r="59.3231"
+            fill="white"
+            fillOpacity="0.1"
+          />
+          <circle
+            id="Ellipse 21"
+            cx="73.6756"
+            cy="59.9989"
+            r="47.7479"
+            fill="white"
+            fillOpacity="0.2"
+          />
+          <circle
+            id="Ellipse 20"
+            cx="73.6762"
+            cy="59.9994"
+            r="36.4907"
+            fill="white"
+          />
+        </g>
+        <g id="Group 1171274870">
+          <path
+            id="Star 14"
+            d="M71.3144 40.7708C72.5145 39.3126 74.7472 39.3126 75.9473 40.7708L78.6769 44.0877C79.3118 44.8591 80.289 45.2639 81.2834 45.1673L85.5589 44.7521C87.4386 44.5695 89.0174 46.1483 88.8348 48.028L88.4196 52.3035C88.323 53.2979 88.7278 54.2751 89.4992 54.91L92.8161 57.6396C94.2743 58.8397 94.2743 61.0724 92.8161 62.2725L89.4992 65.0021C88.7278 65.637 88.323 66.6142 88.4196 67.6086L88.8348 71.8841C89.0174 73.7638 87.4386 75.3426 85.5589 75.16L81.2834 74.7448C80.289 74.6482 79.3118 75.053 78.6769 75.8244L75.9473 79.1413C74.7472 80.5995 72.5145 80.5995 71.3144 79.1413L68.5848 75.8244C67.9499 75.053 66.9727 74.6482 65.9783 74.7448L61.7028 75.16C59.8231 75.3426 58.2443 73.7638 58.4269 71.8841L58.8421 67.6086C58.9387 66.6142 58.5339 65.637 57.7625 65.0021L54.4456 62.2725C52.9874 61.0724 52.9874 58.8397 54.4456 57.6396L57.7625 54.91C58.5339 54.2751 58.9387 53.2979 58.8421 52.3035L58.4269 48.028C58.2443 46.1483 59.8231 44.5695 61.7028 44.7521L65.9783 45.1673C66.9727 45.2639 67.9499 44.8591 68.5848 44.0877L71.3144 40.7708Z"
+            fill="url(#paint0_linear_1881_202521)"
+          />
+          <g id="Group 1171274869">
+            <line
+              id="Line 8"
+              x1="66.1005"
+              y1="68.4257"
+              x2="81.1005"
+              y2="53.4257"
+              stroke="white"
+              strokeWidth="1.5"
+            />
+            <path
+              id="Ellipse 724"
+              d="M74.6309 54.4561C74.6309 56.3891 73.0639 57.9561 71.1309 57.9561C69.1979 57.9561 67.6309 56.3891 67.6309 54.4561C67.6309 52.5231 69.1979 50.9561 71.1309 50.9561C73.0639 50.9561 74.6309 52.5231 74.6309 54.4561ZM69.3322 54.4561C69.3322 55.4494 70.1375 56.2547 71.1309 56.2547C72.1242 56.2547 72.9295 55.4494 72.9295 54.4561C72.9295 53.4627 72.1242 52.6574 71.1309 52.6574C70.1375 52.6574 69.3322 53.4627 69.3322 54.4561Z"
+              fill="white"
+            />
+            <path
+              id="Ellipse 725"
+              d="M80.6309 67.4561C80.6309 69.3891 79.0639 70.9561 77.1309 70.9561C75.1979 70.9561 73.6309 69.3891 73.6309 67.4561C73.6309 65.5231 75.1979 63.9561 77.1309 63.9561C79.0639 63.9561 80.6309 65.5231 80.6309 67.4561ZM75.3322 67.4561C75.3322 68.4494 76.1375 69.2547 77.1309 69.2547C78.1242 69.2547 78.9295 68.4494 78.9295 67.4561C78.9295 66.4627 78.1242 65.6574 77.1309 65.6574C76.1375 65.6574 75.3322 66.4627 75.3322 67.4561Z"
+              fill="white"
+            />
+          </g>
+        </g>
+      </g>
+      <path
+        id="Vector"
+        d="M11.0776 19.8419C8.78535 18.6007 7.10685 16.0397 6.63086 12.9561C6.11729 16.6146 3.69975 19.6721 0.630859 20.4561C3.69975 21.2531 6.11729 24.2975 6.63086 27.9561C7.14443 24.2975 9.57449 21.24 12.6309 20.4561C12.6309 20.4561 11.5286 20.0902 11.0776 19.8419Z"
+        fill="white"
+        fillOpacity="0.4"
+      />
+      <path
+        id="Vector_2"
+        d="M24.2071 76.0943C22.1058 74.9878 20.5672 72.7049 20.1309 69.9561C19.6601 73.2174 17.444 75.9429 14.6309 76.6418C17.444 77.3523 19.6601 80.0662 20.1309 83.3275C20.6016 80.0662 22.8292 77.3406 25.6309 76.6418C25.6309 76.6418 24.6204 76.3156 24.2071 76.0943Z"
+        fill="white"
+      />
+      <path
+        id="Vector_3"
+        d="M66.2071 12.3014C64.1058 11.1948 62.5672 8.91192 62.1309 6.16309C61.6601 9.42441 59.444 12.1499 56.6309 12.8488C59.444 13.5593 61.6601 16.2732 62.1309 19.5345C62.6016 16.2732 64.8292 13.5477 67.6309 12.8488C67.6309 12.8488 66.6204 12.5227 66.2071 12.3014Z"
+        fill="white"
+      />
+    </g>
+    <defs>
+      <linearGradient
+        id="paint0_linear_1881_202521"
+        x1="73.6309"
+        y1="37.9561"
+        x2="93.1309"
+        y2="89.9561"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="#F63093" />
+        <stop offset="1" stopColor="#98DFFF" />
+      </linearGradient>
     </defs>
   </svg>
 );

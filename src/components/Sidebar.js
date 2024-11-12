@@ -1,13 +1,6 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import {
-  HomeIcon,
-  StoreIcon,
-  BriefcaseBusiness as OrderIcon,
-  Bell as NotificationIcon,
-  User as ProfileIcon,
-} from "lucide-react";
 
 import {
   cartIcon,
@@ -22,8 +15,12 @@ import { useTranslations } from "next-intl";
 // Single sidebar link
 const SidebarLink = ({ title, href, Icon }) => {
   const pathname = usePathname();
-  const isActive = href === "/" ? pathname === href : pathname.includes(href);
-  // console.log({ pathname });
+
+  const getPathname = (path) => {
+    return path.includes("offers") ? "/" : "/" + path.split("/")[1];
+  };
+  const isActive = getPathname(pathname) === href;
+
   let classes =
     "flex px-6 py-3 rounded-2xl items-center text-[var(--light)] font-medium  gap-3 ";
 

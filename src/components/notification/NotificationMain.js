@@ -10,7 +10,7 @@ const NotifictionMain = () => {
   const t = useTranslations("notificationPage");
 
   return (
-    <MainContent className="m-6 !w-[96%]">
+    <MainContent className="m-6 !w-[95%]">
       {notifications.length === 0 ? (
         <NoItems
           icon={noNotificationIcon}

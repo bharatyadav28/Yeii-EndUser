@@ -7,10 +7,10 @@ const NotificationList = ({ notifications }) => {
   const today = new Date().toISOString().split("T")[0]; // Get today's date in 'YYYY-MM-DD' format
 
   const todayNotifications = notifications.filter(
-    (notification) => notification.date === today
+    (notification) => notification.date === "Today"
   );
   const pastNotifications = notifications.filter(
-    (notification) => notification.date !== today
+    (notification) => notification.date === "Yesterday"
   );
   return (
     <>

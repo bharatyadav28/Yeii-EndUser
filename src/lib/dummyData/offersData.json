@@ -1,0 +1,144 @@
+{
+  "offers": [
+    {
+      "id": 1,
+      "discount": "50%",
+      "title": "Tik Tok Events",
+      "shopId": 1,
+      "image": "/offerImage.png"
+    },
+    {
+      "id": 2,
+      "discount": "50%",
+      "title": "Tik Tok Events",
+      "shopId": 1,
+      "image": "/offerImage.png"
+    },
+    {
+      "id": 3,
+      "discount": "50%",
+      "title": "Tik Tok Events",
+      "shopId": 1,
+      "image": "/offerImage.png"
+    },
+    {
+      "id": 4,
+      "discount": "50%",
+      "title": "Tik Tok Events",
+      "shopId": 1,
+      "image": "/offerImage.png"
+    },
+    {
+      "id": 5,
+      "discount": "50%",
+      "title": "Tik Tok Events",
+      "shopId": 1,
+      "image": "/offerImage.png"
+    },
+    {
+      "id": 6,
+      "discount": "50%",
+      "title": "Tik Tok Events",
+      "shopId": 1,
+      "image": "/offerImage.png"
+    },
+    {
+      "id": 7,
+      "discount": "50%",
+      "title": "Tik Tok Events",
+      "shopId": 1,
+      "image": "/offerImage.png"
+    },
+    {
+      "id": 8,
+      "discount": "50%",
+      "title": "Tik Tok Events",
+      "shopId": 1,
+      "image": "/offerImage.png"
+    },
+    {
+      "id": 9,
+      "discount": "50%",
+      "title": "Tik Tok Events",
+      "shopId": 1,
+      "image": "/offerImage.png"
+    },
+    {
+      "id": 10,
+      "discount": "50%",
+      "title": "Tik Tok Events",
+      "shopId": 1,
+      "image": "/offerImage.png"
+    },
+    {
+      "id": 11,
+      "discount": "50%",
+      "title": "Tik Tok Events",
+      "shopId": 1,
+      "image": "/offerImage.png"
+    },
+    {
+      "id": 12,
+      "discount": "50%",
+      "title": "Tik Tok Events",
+      "shopId": 1,
+      "image": "/offerImage.png"
+    },
+    {
+      "id": 13,
+      "discount": "50%",
+      "title": "Tik Tok Events",
+      "shopId": 1,
+      "image": "/offerImage.png"
+    },
+    {
+      "id": 14,
+      "discount": "50%",
+      "title": "Tik Tok Events",
+      "shopId": 1,
+      "image": "/offerImage.png"
+    },
+    {
+      "id": 15,
+      "discount": "50%",
+      "title": "Tik Tok Events",
+      "shopId": 1,
+      "image": "/offerImage.png"
+    },
+    {
+      "id": 16,
+      "discount": "50%",
+      "title": "Tik Tok Events",
+      "shopId": 1,
+      "image": "/offerImage.png"
+    },
+    {
+      "id": 17,
+      "discount": "50%",
+      "title": "Tik Tok Events",
+      "shopId": 1,
+      "image": "/offerImage.png"
+    },
+    {
+      "id": 18,
+      "discount": "50%",
+      "title": "Tik Tok Events",
+      "shopId": 1,
+      "image": "/offerImage.png"
+    },
+    {
+      "id": 19,
+      "discount": "50%",
+      "title": "Tik Tok Events",
+      "shopId": 1,
+      "image": "/offerImage.png"
+    },
+    {
+      "id": 20,
+      "discount": "50%",
+      "title": "Tik Tok Events",
+      "shopId": 1,
+      "image": "/offerImage.png"
+    }
+  ]
+}

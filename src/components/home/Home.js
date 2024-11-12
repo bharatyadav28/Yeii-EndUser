@@ -17,6 +17,7 @@ import {
   videoIcon,
 } from "@/lib/svg_icons";
 import { Ellipsis } from "lucide-react";
+import offersData from "@/lib/dummyData/offersData.json";
 
 const Home = () => {
   const servicesList = [
@@ -45,31 +46,18 @@ const Home = () => {
       name: "Others",
     },
   ];
-  const offers = [
-    {
-      discount: "50%",
-      title: "Tik Tok Events",
-      link: "#",
-      image: "/offerImage.png", // replace with actual image path
-    },
-    {
-      discount: "50%",
-      title: "Tik Tok Events",
-      link: "#",
-      image: "/offerImage.png",
-    },
-    {
-      discount: "50%",
-      title: "Tik Tok Events",
-      link: "#",
-      image: "/offerImage.png",
-    },
-  ];
+  let { offers } = offersData;
+  offers = offers.slice(0, 3);
   return (
     <div className="p-6 flex flex-col gap-6">
       <OfferBox title="Offers">
         {offers.map((item, index) => (
-          <OfferCard key={index} item={item} />
+          <OfferCard
+            key={index}
+            item={item}
+            className="w-[32%]"
+            path="offers"
+          />
         ))}
       </OfferBox>
       <CustomCarousel title="Our Top Services Categories">

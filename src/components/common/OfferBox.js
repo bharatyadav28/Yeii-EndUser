@@ -5,7 +5,7 @@ const OfferBox = ({ title, className, children }) => {
     <div className={"bg-[var(--light-gray)] p-4 rounded-3xl " + className}>
       <div className="flex justify-between">
         <h2 className="text-lg font-semibold mb-4">{title}</h2>
-        <Link href="/orders" className="text-sm text-[var(--main-pink)] ">
+        <Link href="/offers" className="text-sm text-[var(--main-pink)] ">
           View all
         </Link>
       </div>

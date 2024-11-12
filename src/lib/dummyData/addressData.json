@@ -1,0 +1,53 @@
+{
+  "selectedAddress": {
+    "type": "Home",
+    "address": "Av. Insurgentes Sur 3000, Ciudad Universitaria, 04510 Ciudad de México, CDMX",
+    "isSelected": true
+  },
+  "savedAddresses": [
+    {
+      "id": 1,
+      "type": "Home",
+      "address": "Av. Insurgentes Sur 3000, Ciudad Universitaria, 04510 Ciudad de México, CDMX",
+      "isSelected": false
+    },
+    {
+      "id": 2,
+      "type": "Home",
+      "address": "Av. Insurgentes Sur 3000, Ciudad Universitaria, 04510 Ciudad de México, CDMX",
+      "isSelected": false
+    },
+    {
+      "id": 3,
+      "type": "Home",
+      "address": "Av. Insurgentes Sur 3000, Ciudad Universitaria, 04510 Ciudad de México, CDMX",
+      "isSelected": false
+    }
+  ],
+  "recentLocations": [
+    {
+      "id": 4,
+      "type": "Hostel",
+      "address": "Av. Insurgentes Sur 3000, Ciudad Universitaria, 04510 Ciudad de México, CDMX",
+      "isSelected": false
+    },
+    {
+      "id": 5,
+      "type": "Hostel",
+      "address": "Av. Insurgentes Sur 3000, Ciudad Universitaria, 04510 Ciudad de México, CDMX",
+      "isSelected": false
+    },
+    {
+      "id": 6,
+      "type": "Hostel",
+      "address": "Av. Insurgentes Sur 3000, Ciudad Universitaria, 04510 Ciudad de México, CDMX",
+      "isSelected": false
+    },
+    {
+      "id": 7,
+      "type": "Hostel",
+      "address": "Av. Insurgentes Sur 3000, Ciudad Universitaria, 04510 Ciudad de México, CDMX",
+      "isSelected": false
+    }
+  ]
+}

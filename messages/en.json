@@ -109,10 +109,22 @@
   },
 
   "locationSidebar": {
-    "heading": "My Location",
+    "my_location": "My Location",
     "search_placeholder": "Search by area, street name..",
     "use_my_location": "Use my current location",
-    "login_to_add": "Login to Add new address"
+    "login_to_add": "Login to Add new address",
+    "add_new_address": "Add new address",
+    "select_location": "Select Location",
+    "change_location": "Change Location",
+    "enter_complete_address": "Enter Complete Address",
+    "confirm_location": "Confirm Location",
+    "change": "Change",
+    "selected_address": "Selected Address",
+    "saved_address": "Saved Address",
+    "recent_locations": "Recent Locations",
+    "home": "Home",
+    "work": "Work",
+    "hostel": "Hostel"
   },
 
   "calender": {
