@@ -9,20 +9,21 @@ const PrivacyPolicyPage = () => {
   const t = useTranslations("profilePage");
 
   return (
-    <AuthPage
-      showHeader={true}
-      heading={t("privacy_policy")}
-      route="/profile/"
-      className="bg-[url('/profile-main-bg.png')]"
-    >
-      <MainContent className="mt-8 !bg-[#fff] ">
-        <Policy title={t("privacy_policy")}>
-          <p>{t("p1")}</p>
-          <p>{t("p2")}</p>
-          <p>{t("p3")}</p>
-        </Policy>
-      </MainContent>
-    </AuthPage>
+    <div>
+      <AuthPage
+        showHeader={true}
+        heading={t("privacy_policy")}
+        route="/profile/"
+      >
+        <MainContent className="mt-8 !bg-[#fff] ">
+          <Policy title={t("privacy_policy")}>
+            <p>{t("p1")}</p>
+            <p>{t("p2")}</p>
+            <p>{t("p3")}</p>
+          </Policy>
+        </MainContent>
+      </AuthPage>
+    </div>
   );
 };
 

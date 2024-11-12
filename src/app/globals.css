@@ -113,3 +113,27 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.dark-btn,
+.dark-btn:hover {
+  background-color: var(--main-pink) !important;
+}
+
+.light-btn,
+.light-btn:hover {
+  background-color: var(--light-gray) !important;
+  color: black;
+}
+
+.react-tel-input {
+  .form-control {
+    border: none !important;
+  }
+  .arrow {
+    display: none;
+  }
+  .flag-dropdown {
+    border: none !important;
+    background-color: inherit !important;
+  }
+}

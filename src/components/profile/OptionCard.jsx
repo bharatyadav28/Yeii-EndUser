@@ -9,7 +9,14 @@ import { Switch } from "../ui/switch";
 import DeleteDialog from "../common/DeleteDialog";
 import { getLanguage } from "@/app/actions/getLanguage";
 
-function OptionCard({ option, isSettings, extraInfo, isDelete, isLanguage }) {
+function OptionCard({
+  option,
+  isSettings,
+  extraInfo,
+  isDelete,
+  isLanguage,
+  className,
+}) {
   const [openDeleteDialog, setOpenDeleteDialog] = useState(false);
   const [lang, setLang] = useState("en");
   const router = useRouter();
@@ -54,7 +61,7 @@ function OptionCard({ option, isSettings, extraInfo, isDelete, isLanguage }) {
         <button
           className={`flex ${
             isSettings ? "py-[1rem]" : "py-[0.6rem]"
-          }  justify-between items-center border-b-[1px]`}
+          }  justify-between items-center border-b-[1px] rounded-xl ${className}`}
           onClick={handleClick}
         >
           <div className="flex justify-center items-center gap-4">
@@ -89,7 +96,7 @@ function OptionCard({ option, isSettings, extraInfo, isDelete, isLanguage }) {
         <div
           className={`flex ${
             isSettings ? "py-[1rem]" : "py-[0.6rem]"
-          }  justify-between items-center border-b-[1px]`}
+          }  justify-between items-center border-b-[1px] rounded-xl ${className}`}
         >
           <div className="flex justify-center items-center gap-4">
             <div className="w-[42px] h-[42px] bg-[var(--light-pink)] rounded-full flex justify-center items-center ">
