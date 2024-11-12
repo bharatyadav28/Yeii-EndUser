@@ -269,7 +269,8 @@
   "profilePage": {
     "profile": "Perfil",
 
-    "manageBusinessProfile": "Gestionar perfil de negocio",
+    "manage_account": "Administrar cuenta",
+    "privacy_policy": "Política de privacidad",
 
     "myTransaction": "Mi transacción",
     "transaction": "Transacción",

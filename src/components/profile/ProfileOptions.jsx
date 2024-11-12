@@ -8,6 +8,7 @@ import {
   settingIcon,
   termsIcon,
   notificationIcon,
+  profileIcon,
 } from "@/lib/svg_icons";
 import { ChevronRight, LogOut } from "lucide-react";
 import { useRouter } from "next/navigation";
@@ -38,35 +39,46 @@ const ProfileOptions = () => {
     },
     {
       id: 2,
-      icon: notificationIcon,
+      icon: profileIcon,
       title: t("manage_account"),
-      route: "#",
+      route: "/manage_account",
     },
 
     {
-      id: 4,
+      id: 3,
       icon: settingIcon,
       title: t("settings"),
       route: "/settings",
     },
     {
-      id: 5,
+      id: 4,
       icon: policyIcon,
       title: t("privacy_policy"),
       route: "/privacy_policy",
     },
     {
-      id: 6,
+      id: 5,
       icon: termsIcon,
       title: t("termsAndConditions"),
       route: "/terms_and_conditions",
     },
   ];
+
+  const StartEndItems = (arr, index) => {
+    console.log(arr, index, index === 1 || index === arr.length);
+    return index === 1 || index === arr.length;
+  };
   return (
     <>
-      <div className="flex-grow flex flex-col gap-3 px-5 mt-4  overflow-y-auto ">
+      <div className="flex-grow flex flex-col gap-3 px-5 mt-4  overflow-y-auto pb-4">
         {options.map((option) => (
-          <OptionCard key={option.id} option={option} />
+          <OptionCard
+            key={option.id}
+            option={option}
+            className={
+              StartEndItems(options, option.id) ? "pb-[1rem]" : "border-b-0 "
+            }
+          />
         ))}
         <button
           onClick={handleDeleteDialog}
