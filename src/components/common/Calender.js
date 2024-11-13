@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import {
   format,
   addDays,
@@ -11,18 +11,13 @@ import {
   isSameMonth,
   isSameDay,
   subDays,
+  getMonth,
 } from "date-fns";
-import {
-  ChevronDown,
-  ChevronLeft,
-  ChevronRight,
-  ChevronUp,
-} from "lucide-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useTranslations } from "next-intl";
 
-const Calendar = ({ expanded, selectedDate, setSelectedDate }) => {
+const Calendar = ({ expanded, selectedDate, setSelectedDate, className }) => {
   const [currentMonth, setCurrentMonth] = useState(new Date());
-  const [expandCalender, setExpandCalender] = useState(expanded);
   const t = useTranslations("calender");
 
   function isWeekend(date) {
@@ -35,7 +30,6 @@ const Calendar = ({ expanded, selectedDate, setSelectedDate }) => {
     const dateArr = format(currentMonth, "MMMM yyyy").split(" ");
     return (
       <div className="flex justify-between items-center mb-5">
-        {/* <div className="text-lg font-semibold text-black">{t("title")}</div> */}
         <span className="text-sm text-black">
           {t(dateArr[0]) + " " + dateArr[1]}
         </span>
@@ -122,42 +116,124 @@ const Calendar = ({ expanded, selectedDate, setSelectedDate }) => {
   };
 
   const MiniCalender = () => {
-    const daysArray = Array.from({ length: 7 }, (_, index) =>
-      addDays(subDays(selectedDate, selectedDate.getDay()), index)
+    const scrollRef = useRef(null);
+
+    const [startDate, setStartDate] = useState(
+      addDays(
+        selectedDate,
+        -(selectedDate.getDate() === new Date().getDate() &&
+        selectedDate.getMonth() === new Date().getMonth()
+          ? 0
+          : 5)
+      )
     );
+    const [daysArray, setDaysArray] = useState(
+      Array.from({ length: 20 }, (_, index) => addDays(startDate, index))
+    );
+
+    // console.log(startDate.getDate(), new Date().getDate());
+
+    const scrollLeft = () => {
+      if (scrollRef.current) {
+        // Scroll the container to the left
+        scrollRef.current.scrollBy({ left: -100, behavior: "smooth" });
+
+        // Check if the user has reached the start of the current dates displayed
+        if (scrollRef.current.scrollLeft <= 50) {
+          // Update start date to 20 days before the current first date in daysArray
+          const newStartDate = subDays(daysArray[0], 20);
+
+          // Add the previous 20 dates to the beginning of the array
+          const newDaysArray = Array.from({ length: 20 }, (_, index) =>
+            addDays(newStartDate, index)
+          );
+
+          // Extend the daysArray with the new dates at the start
+          setDaysArray((prevDays) => [...newDaysArray, ...prevDays]);
+
+          // Update the start date to the new starting point
+          setStartDate(newStartDate);
+        }
+      }
+    };
+    // Function to scroll and load the next set of dates
+    const scrollRight = () => {
+      if (scrollRef.current) {
+        // Scroll the container
+        scrollRef.current.scrollBy({ left: 100, behavior: "smooth" });
+
+        // Check if we've reached the end of the current dates displayed
+        if (
+          scrollRef.current.scrollLeft + scrollRef.current.clientWidth >=
+          scrollRef.current.scrollWidth - 50 // Buffer to trigger loading new dates slightly before end
+        ) {
+          // Update start date to the next day after the last date in daysArray
+          const newStartDate = addDays(daysArray[daysArray.length - 1], 1);
+
+          // Add the next 20 dates
+          const newDaysArray = Array.from({ length: 20 }, (_, index) =>
+            addDays(newStartDate, index)
+          );
+
+          // Extend the daysArray with the new dates
+          setDaysArray((prevDays) => [...prevDays, ...newDaysArray]);
+
+          // Update the start date to the new starting point
+          setStartDate(newStartDate);
+        }
+      }
+    };
+
     return (
-      <div className="grid grid-cols-7 gap-2 text-center mb-1">
-        {daysArray.map((date, index) => (
-          <div
-            key={index}
-            className={`p-2 py-3 rounded-lg cursor-pointer ${
-              format(date, "dd") === format(selectedDate, "dd")
-                ? "bg-white text-pink-600"
-                : "text-black"
-            }`}
-            onClick={() => setSelectedDate(date)}
-          >
-            <div className="font-bold text-[17px]">{format(date, "dd")}</div>
-            <div
-              className={`text-xs ${
-                format(date, "dd") === format(selectedDate, "dd") &&
-                "text-black"
-              }`}
-            >
-              {t(format(date, "E"))}
-            </div>
-          </div>
-        ))}
+      <div className="flex items-center">
+        {startDate.getDate() !== new Date().getDate() && (
+          <button onClick={scrollLeft} className="mr-2">
+            <ChevronLeft size={20} className="text-black cursor-pointer" />
+          </button>
+        )}
+        <div
+          ref={scrollRef}
+          className="flex items-center overflow-x-auto scrollbar-hide"
+        >
+          {daysArray.map((date, index) => {
+            const isStartOfMonth =
+              index === 0 || getMonth(date) !== getMonth(daysArray[index - 1]);
+
+            return (
+              <React.Fragment key={index}>
+                {date.getDate() == 1 && (
+                  <div className="bg-pink-200 text-[var(--main-pink)] font-bold text-lg p-4 py-1 rounded-lg -rotate-90">
+                    {format(date, "MMM")}
+                  </div>
+                )}
+                <div
+                  className={`flex flex-col items-center justify-center w-12 p-2 m-1 cursor-pointer rounded-lg ${
+                    isSameDay(date, selectedDate)
+                      ? "bg-[var(--main-pink)] text-white"
+                      : "text-black"
+                  }`}
+                  onClick={() => setSelectedDate(date)}
+                >
+                  <div className="font-bold text-lg">{format(date, "dd")}</div>
+                  <div className="text-xs">{t(format(date, "E"))}</div>
+                </div>
+              </React.Fragment>
+            );
+          })}
+        </div>
+        <button onClick={scrollRight} className="ml-2">
+          <ChevronRight size={20} className="text-black cursor-pointer" />
+        </button>
       </div>
     );
   };
 
   return (
-    <div className="flex flex-col gap-2 mb-2 mt-4">
+    <div className={"flex flex-col gap-2 mb-2 mt-4 " + className}>
       <div className={`w-full mx-auto `}>
-        {renderHeader()}
-        {expandCalender ? (
+        {expanded ? (
           <>
+            {renderHeader()}
             <RenderDays />
             <RenderCells />
           </>
@@ -165,18 +241,6 @@ const Calendar = ({ expanded, selectedDate, setSelectedDate }) => {
           <MiniCalender />
         )}
       </div>
-      {!expanded && (
-        <button
-          onClick={() => setExpandCalender((prev) => !prev)}
-          className="self-center bg-black/20 rounded-full p-1"
-        >
-          {expandCalender ? (
-            <ChevronUp color="white" size={14} />
-          ) : (
-            <ChevronDown color="white" size={14} />
-          )}
-        </button>
-      )}
     </div>
   );
 };

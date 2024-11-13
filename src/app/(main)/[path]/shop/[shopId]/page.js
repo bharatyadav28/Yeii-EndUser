@@ -5,7 +5,7 @@ import ShopComp from "@/components/shop/ShopComp";
 const Shop = ({ params }) => {
   const { path, shopId } = params;
   return (
-    <DashboardPage>
+    <DashboardPage className="relative">
       <MainHeader className="h-52 !block p-4" route={`/${path}`} />
       <ShopComp />
     </DashboardPage>

@@ -335,5 +335,25 @@
     "logoutDescription": "Are you sure you want to logout?",
     "cancel": "Cancel",
     "confirm": "Confirm"
+  },
+
+  "shopPage": {
+    "explore_products": "Explore products",
+    "search_products": "Search Products",
+    "offer_selected": "Offer selected",
+    "more_offers": "more offers",
+    "recommended": "Recommended",
+    "add": "Add"
+  },
+  "manualSearch": {
+    "search": "Search",
+    "search_for": "Search for 'service'",
+    "recent_search": "Recent search",
+    "top_services": "Our Top Services Categories",
+    "top_products": "Our Top Products Categories"
+  },
+
+  "searchPage": {
+    "showing_result_for": "Showing result for"
   }
 }

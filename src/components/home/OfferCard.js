@@ -1,4 +1,4 @@
-import { discountIcon } from "@/lib/svg_icons";
+import { DiscountIcon } from "@/lib/svg_icons";
 import { ChevronRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -37,7 +37,7 @@ const OfferCard = ({ item, className, path }) => {
       <div>
         <Image src={item.image} alt={item.title} width={178} height={1} />
         <div className="absolute bottom-4 right-5 text-[0.5rem] font-bold text-[var(--lightblue)] flex items-center gap-[2px] rounded-3xl p-1 px-2 bg-[#172E46] ">
-          {discountIcon} {item.discount}
+          <DiscountIcon width="14" /> {item.discount}
         </div>
       </div>
     </div>

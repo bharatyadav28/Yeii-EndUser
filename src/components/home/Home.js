@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+
 import CustomCarousel from "../common/CustomCarousel";
 import CarouselCard from "./CarouselCard";
 import OfferBox from "../common/OfferBox";
@@ -18,6 +19,7 @@ import {
 } from "@/lib/svg_icons";
 import { Ellipsis } from "lucide-react";
 import offersData from "@/lib/dummyData/offersData.json";
+import { CarouselItem } from "../ui/carousel";
 
 const Home = () => {
   const servicesList = [
@@ -46,6 +48,10 @@ const Home = () => {
       name: "Others",
     },
   ];
+
+  const handleCardClick = (value) => {
+    console.log(value);
+  };
   let { offers } = offersData;
   offers = offers.slice(0, 3);
   return (
@@ -62,12 +68,20 @@ const Home = () => {
       </OfferBox>
       <CustomCarousel title="Our Top Services Categories">
         {servicesList.map((item, index) => (
-          <CarouselCard key={index} item={item} />
+          <CarouselItem key={index} className="basis-36 cursor-pointer p-0">
+            <CarouselCard onClick={handleCardClick} item={item} />
+          </CarouselItem>
         ))}
       </CustomCarousel>
       <CustomCarousel title="Our Top Products Categories">
         {productList.map((item, index) => (
-          <CarouselCard key={index} item={item} />
+          <CarouselItem
+            onClick={handleCardClick}
+            key={index}
+            className="basis-36 cursor-pointer p-0"
+          >
+            <CarouselCard item={item} />
+          </CarouselItem>
         ))}
       </CustomCarousel>
     </div>

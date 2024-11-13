@@ -2,7 +2,7 @@
 import { useRouter } from "next/navigation";
 import { BackwardButton } from "./CustomButtons";
 
-const MainHeader = ({ className, heading, route, isExpanded, icon }) => {
+const MainHeader = ({ className, heading, route, icon }) => {
   const router = useRouter();
 
   return (
@@ -13,7 +13,7 @@ const MainHeader = ({ className, heading, route, isExpanded, icon }) => {
       }
     >
       <div className="flex items-center gap-4">
-        <BackwardButton onClick={() => router.push(route)} />
+        <BackwardButton className="p-4" onClick={() => router.push(route)} />
         {heading}
       </div>
       {icon}

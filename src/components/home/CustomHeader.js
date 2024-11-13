@@ -9,10 +9,12 @@ import CustomDialog from "../common/CustomDialog";
 import { useTranslations } from "next-intl";
 import Calendar from "../common/Calender";
 import { DarkButton, LightButton } from "../common/CustomButtons";
+import ManualSearch from "../common/ManualSearch";
 
 const CustomHeader = () => {
   const [open, setOpen] = useState(false);
   const [openDialog, setOpenDialog] = useState(false);
+  const [openManualSearch, setOpenManualSearch] = useState(false);
   const [date, setDate] = useState(new Date());
   const t = useTranslations("calender");
 
@@ -24,10 +26,15 @@ const CustomHeader = () => {
     setOpenDialog((prev) => !prev);
   };
 
+  const handleManualSearchOpen = () => {
+    setOpenManualSearch((prev) => !prev);
+  };
+
   const handleCalenderSearch = () => {
     console.log(date);
     handleOpen();
   };
+
   return (
     <>
       <div className="flex items-center gap-6">
@@ -44,14 +51,11 @@ const CustomHeader = () => {
           </div>
         </div>
         <div className="flex gap-2 items-center">
-          {/* <div className="flex bg-white rounded-2xl p-3 px-4 text-[var(--main-gray)] w-[28vw]">
-            <Search />
-            <input
-              className="pl-2 outline-none placeholder:text-sm placeholder:text-[var(--main-gray)]"
-              placeholder="Search"
-            />
-          </div> */}
-          <SearchInput className="w-[28vw]" placeholder="Search" />
+          <SearchInput
+            onClick={handleManualSearchOpen}
+            className="w-[28vw]"
+            placeholder="Search"
+          />
           <button
             onClick={handleOpen}
             className="bg-white p-4 rounded-2xl cursor-pointer"
@@ -90,6 +94,10 @@ const CustomHeader = () => {
           </DarkButton>
         </div>
       </CustomDialog>
+      <ManualSearch
+        open={openManualSearch}
+        handleOpen={handleManualSearchOpen}
+      />
     </>
   );
 };

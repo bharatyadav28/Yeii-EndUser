@@ -1,0 +1,70 @@
+{
+  "shop": {
+    "name": "Tik Tok Events",
+    "address": "123 Street, Mexico",
+    "image": "/offerImage.png",
+    "rating": {
+      "average": 4.4,
+      "total_reviews": 5230
+    },
+    "offers": [
+      {
+        "id": 1,
+        "description": "50% off Upto $75",
+        "discount": "50%"
+      },
+      {
+        "id": 2,
+        "description": "50% off Upto $75",
+        "discount": "50%"
+      },
+      {
+        "id": 3,
+        "description": "50% off Upto $75",
+        "discount": "50%"
+      }
+    ],
+    "recommended": [
+      {
+        "id": 1,
+        "name": "Furniture with Tables",
+        "price": "$450",
+        "rating": {
+          "average": 4.0,
+          "total_reviews": 1030
+        },
+        "image_url": "/product-image.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Furniture with Tables",
+        "price": "$450",
+        "rating": {
+          "average": 4.0,
+          "total_reviews": 1030
+        },
+        "image_url": "/product-image.jpg"
+      },
+      {
+        "id": 3,
+        "name": "Furniture with Tables",
+        "price": "$450",
+        "rating": {
+          "average": 4.0,
+          "total_reviews": 1030
+        },
+        "image_url": "/product-image.jpg"
+      },
+      {
+        "id": 4,
+        "name": "Furniture with Tables",
+        "price": "$450",
+        "rating": {
+          "average": 4.0,
+          "total_reviews": 1030
+        },
+        "image_url": "/product-image.jpg"
+      }
+    ]
+  }
+}

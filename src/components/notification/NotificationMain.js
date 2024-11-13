@@ -10,17 +10,19 @@ const NotifictionMain = () => {
   const t = useTranslations("notificationPage");
 
   return (
-    <MainContent className="m-6 !w-[95%]">
-      {notifications.length === 0 ? (
-        <NoItems
-          icon={noNotificationIcon}
-          heading={t("no_noti_heading")}
-          subHeading={t("no_noti_subHeading")}
-        />
-      ) : (
-        <NotificationList notifications={notifications} />
-      )}
-    </MainContent>
+    <div className="px-6 pt-3 pb-10 overflow-hidden">
+      <MainContent>
+        {notifications.length === 0 ? (
+          <NoItems
+            icon={noNotificationIcon}
+            heading={t("no_noti_heading")}
+            subHeading={t("no_noti_subHeading")}
+          />
+        ) : (
+          <NotificationList notifications={notifications} />
+        )}
+      </MainContent>
+    </div>
   );
 };
 
