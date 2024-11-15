@@ -354,6 +354,7 @@
   },
 
   "searchPage": {
-    "showing_result_for": "Showing result for"
+    "showing_result_for": "Showing result for",
+    "sort_by": "Sort by"
   }
 }

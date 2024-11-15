@@ -7,9 +7,16 @@ import { SearchInput } from "../common/customInput";
 import { ChevronRight } from "lucide-react";
 import { useState } from "react";
 import RecommendedList from "./RecommendedList";
+import { useSearchParams } from "next/navigation";
 
 const ShopComp = () => {
   const t = useTranslations("shopPage");
+  const params = useSearchParams();
+
+  const query = params.get("query");
+  const category = params.get("category");
+  const date = params.get("date");
+  const type = params.get("type");
   const [searchInput, setSearchInput] = useState("");
   return (
     <div className="bg-[var(--light-gray)] h-full w-full ">
@@ -67,7 +74,7 @@ const ShopComp = () => {
         </div>
 
         {/* top picks */}
-        {shop.top_picks && <div>Top Picks</div>}
+        {query && <div>Top Picks</div>}
 
         {/* recommended */}
         <RecommendedList data={shop.recommended} />

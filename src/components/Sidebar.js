@@ -17,7 +17,9 @@ const SidebarLink = ({ title, href, Icon }) => {
   const pathname = usePathname();
 
   const getPathname = (path) => {
-    return path.includes("offers") ? "/" : "/" + path.split("/")[1];
+    return path.includes("offers") || path.includes("search")
+      ? "/"
+      : "/" + path.split("/")[1];
   };
   const isActive = getPathname(pathname) === href;
 

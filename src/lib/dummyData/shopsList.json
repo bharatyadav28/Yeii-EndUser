@@ -1,0 +1,202 @@
+[
+  {
+    "shopId": "sfs454sdff46sd4f",
+    "id": 1,
+    "title": "Tik Tok Events",
+    "distance": "2Kms from you",
+    "rating": 4.4,
+    "reviews": 5230,
+    "discount": "50% off Upto $75",
+    "image": "path/to/tik_tok_events_image.jpg"
+  },
+  {
+    "shopId": "sfs454sdff46sd4f",
+    "id": 2,
+    "title": "Radiant Revelries",
+    "distance": "2Kms from you",
+    "rating": 4.6,
+    "reviews": 7530,
+    "discount": "50% off Upto $75",
+    "image": "path/to/radiant_revelries_image.jpg"
+  },
+  {
+    "shopId": "sfs454sdff46sd4f",
+    "id": 3,
+    "title": "Lavish Affairs",
+    "distance": "2Kms from you",
+    "rating": 3.1,
+    "reviews": 1020,
+    "discount": "50% off Upto $50",
+    "image": "path/to/lavish_affairs_image.jpg"
+  },
+  {
+    "shopId": "sfs454sdff46sd4f",
+    "id": 4,
+    "title": "Joyous Gatherings",
+    "distance": "5Kms from you",
+    "rating": 4.8,
+    "reviews": 2150,
+    "discount": "30% off Upto $60",
+    "image": "path/to/joyous_gatherings_image.jpg"
+  },
+  {
+    "shopId": "sfs454sdff46sd4f",
+    "id": 5,
+    "title": "Epic Celebrations",
+    "distance": "10Kms from you",
+    "rating": 4.9,
+    "reviews": 3050,
+    "discount": "20% off Upto $100",
+    "image": "path/to/epic_celebrations_image.jpg"
+  },
+  {
+    "shopId": "sfs454sdff46sd4f",
+    "id": 6,
+    "title": "Gala Nights",
+    "distance": "3Kms from you",
+    "rating": 4.7,
+    "reviews": 4400,
+    "discount": "50% off Upto $85",
+    "image": "path/to/gala_nights_image.jpg"
+  },
+  {
+    "shopId": "sfs454sdff46sd4f",
+    "id": 7,
+    "title": "Royal Festivities",
+    "distance": "8Kms from you",
+    "rating": 4.2,
+    "reviews": 1280,
+    "discount": "40% off Upto $70",
+    "image": "path/to/royal_festivities_image.jpg"
+  },
+  {
+    "shopId": "sfs454sdff46sd4f",
+    "id": 8,
+    "title": "Majestic Moments",
+    "distance": "4Kms from you",
+    "rating": 4.5,
+    "reviews": 3190,
+    "discount": "30% off Upto $65",
+    "image": "path/to/majestic_moments_image.jpg"
+  },
+  {
+    "shopId": "sfs454sdff46sd4f",
+    "id": 9,
+    "title": "Elegant Evenings",
+    "distance": "7Kms from you",
+    "rating": 3.9,
+    "reviews": 1700,
+    "discount": "25% off Upto $40",
+    "image": "path/to/elegant_evenings_image.jpg"
+  },
+  {
+    "shopId": "sfs454sdff46sd4f",
+    "id": 10,
+    "title": "Vibrant Gatherings",
+    "distance": "6Kms from you",
+    "rating": 4.3,
+    "reviews": 2800,
+    "discount": "45% off Upto $80",
+    "image": "path/to/vibrant_gatherings_image.jpg"
+  },
+  {
+    "shopId": "sfs454sdff46sd4f",
+    "id": 11,
+    "title": "Enchanting Soirées",
+    "distance": "9Kms from you",
+    "rating": 4.1,
+    "reviews": 1100,
+    "discount": "50% off Upto $55",
+    "image": "path/to/enchanting_soirees_image.jpg"
+  },
+  {
+    "shopId": "sfs454sdff46sd4f",
+    "id": 12,
+    "title": "Sunset Festivals",
+    "distance": "3Kms from you",
+    "rating": 4.0,
+    "reviews": 950,
+    "discount": "30% off Upto $50",
+    "image": "path/to/sunset_festivals_image.jpg"
+  },
+  {
+    "shopId": "sfs454sdff46sd4f",
+    "id": 13,
+    "title": "Paradise Parties",
+    "distance": "4Kms from you",
+    "rating": 3.8,
+    "reviews": 760,
+    "discount": "35% off Upto $45",
+    "image": "path/to/paradise_parties_image.jpg"
+  },
+  {
+    "shopId": "sfs454sdff46sd4f",
+    "id": 14,
+    "title": "Dreamy Days",
+    "distance": "5Kms from you",
+    "rating": 4.5,
+    "reviews": 2500,
+    "discount": "50% off Upto $90",
+    "image": "path/to/dreamy_days_image.jpg"
+  },
+  {
+    "shopId": "sfs454sdff46sd4f",
+    "id": 15,
+    "title": "Glamour Nights",
+    "distance": "1Km from you",
+    "rating": 4.7,
+    "reviews": 3150,
+    "discount": "60% off Upto $100",
+    "image": "path/to/glamour_nights_image.jpg"
+  },
+  {
+    "shopId": "sfs454sdff46sd4f",
+    "id": 16,
+    "title": "Starlight Soirées",
+    "distance": "3Kms from you",
+    "rating": 4.6,
+    "reviews": 2100,
+    "discount": "50% off Upto $70",
+    "image": "path/to/starlight_soirees_image.jpg"
+  },
+  {
+    "shopId": "sfs454sdff46sd4f",
+    "id": 17,
+    "title": "Blissful Banquets",
+    "distance": "6Kms from you",
+    "rating": 3.7,
+    "reviews": 1350,
+    "discount": "25% off Upto $60",
+    "image": "path/to/blissful_banquets_image.jpg"
+  },
+  {
+    "shopId": "sfs454sdff46sd4f",
+    "id": 18,
+    "title": "Splendid Showcases",
+    "distance": "7Kms from you",
+    "rating": 4.3,
+    "reviews": 1760,
+    "discount": "30% off Upto $55",
+    "image": "path/to/splendid_showcases_image.jpg"
+  },
+  {
+    "shopId": "sfs454sdff46sd4f",
+    "id": 19,
+    "title": "Luxurious Affairs",
+    "distance": "2Kms from you",
+    "rating": 4.9,
+    "reviews": 4920,
+    "discount": "50% off Upto $120",
+    "image": "path/to/luxurious_affairs_image.jpg"
+  },
+  {
+    "shopId": "sfs454sdff46sd4f",
+    "id": 20,
+    "title": "Serene Gatherings",
+    "distance": "5Kms from you",
+    "rating": 4.0,
+    "reviews": 1050,
+    "discount": "20% off Upto $50",
+    "image": "path/to/serene_gatherings_image.jpg"
+  }
+]
