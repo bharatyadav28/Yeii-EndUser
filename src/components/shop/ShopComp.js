@@ -1,5 +1,5 @@
 "use client";
-import { shop } from "@/lib/dummyData/shopData.json";
+import shopData from "@/lib/dummyData/shopData.json";
 import { DiscountIcon, locationIconBlack, starIcon } from "@/lib/svg_icons";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
@@ -23,6 +23,8 @@ const ShopComp = () => {
   const [openSidebar, setOpenSidebar] = useState(false);
   const [id, setId] = useState(null);
   const [product, setProduct] = useState(null);
+
+  const { shop } = shopData;
 
   const dispatch = useDispatch();
 

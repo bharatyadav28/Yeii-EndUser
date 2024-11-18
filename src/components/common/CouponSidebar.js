@@ -2,7 +2,7 @@ import { useTranslations } from "next-intl";
 import { SearchInput } from "./customInput";
 import { useState } from "react";
 import CustomSidebar from "./CustomSidebar";
-import { coupons } from "@/lib/dummyData/offersData.json";
+import offersData from "@/lib/dummyData/offersData.json";
 import { DiscountIcon } from "@/lib/svg_icons";
 import { Check, ChevronDown, ChevronUp } from "lucide-react";
 
@@ -47,6 +47,7 @@ const CouponSidebar = ({ open, onOpenChange }) => {
   const t = useTranslations("couponSidebar");
   const [inputValue, setInputValue] = useState("");
 
+  const { coupons } = offersData;
   return (
     <CustomSidebar
       open={open}

@@ -7,7 +7,7 @@ import { useTranslations } from "next-intl";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 
-import { user } from "@/lib/dummyData/userData.json";
+import userData from "@/lib/dummyData/userData.json";
 import { SelectInput, TextArea, TextInput } from "../common/customInput";
 import { EmailIcon, UserIcon } from "@/lib/svg_icons";
 import { DarkButton, LightButton } from "../common/CustomButtons";
@@ -21,6 +21,7 @@ const MainComp = ({ isEdit, setIsEdit }) => {
     operating_as: user.operating_as,
     address: user.address,
   });
+  const { user } = userData;
 
   const t = useTranslations("signupPage");
 
