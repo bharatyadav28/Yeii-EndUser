@@ -1,0 +1,11 @@
+{
+  "id": 1,
+  "name": "Furniture with Tables",
+  "price": "$450",
+  "rating": {
+    "average": 4.0,
+    "total_reviews": 1030
+  },
+  "image_url": "/top-picks-image.jpeg",
+  "description": "Lorem ipsum dolor sit amet consectetur. Justo iaculis pellentesque ac nunc. Semper habitant ultrices mauris amet ac fermentum nisl at. Volutpat convallis amet proin vulputate vel imperdiet etiam. "
+}

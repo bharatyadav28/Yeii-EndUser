@@ -16,6 +16,7 @@ function CustomDialog({
   children,
   showBackward,
   titleRightContent,
+  crossStyle,
 }) {
   let classes =
     "max-w-full w-[10rem] min-h-[10rem] !bg-[var(--light-gray)] !rounded-3xl overflow-y-auto py-4";
@@ -34,8 +35,19 @@ function CustomDialog({
                 <BackwardButton onClick={handleOpen} />
               </div>
             )}
-            <div className=" mt-2 text-lg font-semibold "> {title}</div>
-            <div className="absolute right-0 top-2 ">{titleRightContent}</div>
+            <CrossButton
+              onClick={handleOpen}
+              className={
+                "absolute p-5 right-5 top-5 z-[1000] !bg-[#665749] !text-white " +
+                crossStyle
+              }
+            />
+            {title && (
+              <div className=" mt-2 text-lg font-semibold "> {title}</div>
+            )}
+            {titleRightContent && (
+              <div className="absolute right-0 top-2 ">{titleRightContent}</div>
+            )}
           </div>
           {children}
         </div>

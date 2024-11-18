@@ -65,6 +65,78 @@
         },
         "image_url": "/product-image.jpg"
       }
+    ],
+    "top_picks": [
+      {
+        "id": 1,
+        "name": "Furniture with Tables",
+        "price": "$450",
+        "rating": {
+          "average": 4.0,
+          "total_reviews": 1030
+        },
+        "image_url": "/top-picks-image.jpeg"
+      },
+      {
+        "id": 2,
+        "name": "Furniture with Tables",
+        "price": "$450",
+        "rating": {
+          "average": 4.0,
+          "total_reviews": 1030
+        },
+        "image_url": "/top-picks-image.jpeg"
+      },
+      {
+        "id": 3,
+        "name": "Furniture with Tables",
+        "price": "$450",
+        "rating": {
+          "average": 4.0,
+          "total_reviews": 1030
+        },
+        "image_url": "/top-picks-image.jpeg"
+      },
+      {
+        "id": 4,
+        "name": "Furniture with Tables",
+        "price": "$450",
+        "rating": {
+          "average": 4.0,
+          "total_reviews": 1030
+        },
+        "image_url": "/top-picks-image.jpeg"
+      },
+      {
+        "id": 5,
+        "name": "Furniture with Tables",
+        "price": "$450",
+        "rating": {
+          "average": 4.0,
+          "total_reviews": 1030
+        },
+        "image_url": "/top-picks-image.jpeg"
+      },
+      {
+        "id": 6,
+        "name": "Furniture with Tables",
+        "price": "$450",
+        "rating": {
+          "average": 4.0,
+          "total_reviews": 1030
+        },
+        "image_url": "/top-picks-image.jpeg"
+      },
+      {
+        "id": 7,
+        "name": "Furniture with Tables",
+        "price": "$450",
+        "rating": {
+          "average": 4.0,
+          "total_reviews": 1030
+        },
+        "image_url": "/top-picks-image.jpeg"
+      }
     ]
   }
 }

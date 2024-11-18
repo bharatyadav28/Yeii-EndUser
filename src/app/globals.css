@@ -41,6 +41,7 @@ body {
     --radius: 0.5rem;
 
     --main-pink: #f63093;
+    --color: rgb(255, 239, 232);
     --light-pink: #f6309314;
     --light: #ffffff;
     --light-gray: #f1f4f6;
@@ -95,16 +96,16 @@ body {
 .animate-slide {
   animation: slide 0.6s ease-out;
 }
-
-.dark-btn,
-.dark-btn:hover {
-  background-color: var(--main-pink) !important;
+@keyframes slide-right {
+  0% {
+    transform: translateX(500px);
+  }
+  100% {
+    transform: none;
+  }
 }
-
-.light-btn,
-.light-btn:hover {
-  background-color: var(--light-gray) !important;
-  color: black;
+.animate-slide-right {
+  animation: slide-right 0.6s ease-out;
 }
 
 .app-name {
@@ -121,7 +122,7 @@ body {
 
 .light-btn,
 .light-btn:hover {
-  background-color: var(--light-gray) !important;
+  background-color: var(--light-gray);
   color: black;
 }
 

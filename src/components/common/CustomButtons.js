@@ -1,7 +1,9 @@
 "use client";
 
-import { ChevronLeft as BackIcon, X } from "lucide-react";
+import { ChevronLeft as BackIcon, Plus, X } from "lucide-react";
 import { Button } from "../ui/button";
+import { useState } from "react";
+import { CounterInput } from "./customInput";
 
 export const CustomButton = ({
   children,
@@ -58,7 +60,7 @@ export const LightButton = ({
   isSubmit,
   ...props
 }) => {
-  let classes = "light-btn";
+  let classes = "light-btn hover:!bg-[var(--light-gray)] ";
   if (className) {
     classes = classes + " " + className;
   }
@@ -123,6 +125,37 @@ export const CrossButton = (props) => {
   return (
     <LightButton {...props} onClick={onClick} className={classes}>
       <X size={20} />
+    </LightButton>
+  );
+};
+
+export const AddButton = ({ children, ...props }) => {
+  const { onClick, className } = props;
+
+  const [cnt, setCnt] = useState(0);
+
+  const changeCount = (e) => {
+    e.stopPropagation();
+    setCnt(1);
+  };
+
+  let classes = " !justify-between !p-0 self-stretch";
+
+  return cnt > 0 ? (
+    <CounterInput
+      className={classes}
+      value={cnt}
+      onChange={(data) => setCnt(data)}
+    />
+  ) : (
+    <LightButton
+      onClick={changeCount}
+      className={
+        "!text-[var(--main-pink)] hover:!bg-pink-100 py-1 font-bold " +
+        className
+      }
+    >
+      <Plus /> {children}
     </LightButton>
   );
 };

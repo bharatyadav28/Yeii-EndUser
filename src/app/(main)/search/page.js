@@ -24,7 +24,7 @@ const SearchPage = () => {
   // console.log({ query: params.get("query"), category: params.get("category") });
   return (
     <DashboardPage>
-      <MainHeader heading={heading} icon={searchPageLogo} />
+      <MainHeader route="/" heading={heading} icon={searchPageLogo} />
       <SearchResults
         date={date}
         category={category}

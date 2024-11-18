@@ -1,16 +1,10 @@
 import Image from "next/image";
-import { LightButton } from "../common/CustomButtons";
-import { Plus, Star } from "lucide-react";
-import { useState } from "react";
+import { AddButton } from "../common/CustomButtons";
 import { useTranslations } from "use-intl";
 import { RatingHalf, RatingIcon } from "@/lib/svg_icons";
-import { CounterInput } from "../common/customInput";
 
-const ProductsCard = ({ item, className }) => {
+const ProductsCard = ({ item, className, handleClick }) => {
   const t = useTranslations("shopPage");
-  const [cnt, setCnt] = useState(0);
-
-  const changeCount = () => setCnt(1);
 
   const getRatings = () => {
     const arr = [
@@ -28,6 +22,7 @@ const ProductsCard = ({ item, className }) => {
   };
   return (
     <div
+      onClick={() => handleClick(item.id)}
       className={
         "my-2 p-3 bg-white rounded-3xl flex items-center gap-3 " + className
       }
@@ -42,20 +37,11 @@ const ProductsCard = ({ item, className }) => {
       <div className="flex flex-col gap-1">
         <div className="text-sm font-semibold">{item.name}</div>
         <div className="text-sm text-black/75 font-semibold">{item.price}</div>
-        <div className="text-[0.5rem] flex items-center gap-2">
+        <div className="text-[0.5rem] flex items-center gap-2 mb-3">
           <div className="flex items-center">{getRatings()}</div>
           {item.rating.average + "(" + item.rating.total_reviews + ")"}
         </div>
-        {cnt > 0 ? (
-          <CounterInput value={cnt} onChange={(data) => setCnt(data)} />
-        ) : (
-          <LightButton
-            onClick={changeCount}
-            className="!text-[var(--main-pink)] py-1 font-bold mt-4"
-          >
-            <Plus /> {t("add")}
-          </LightButton>
-        )}
+        <AddButton>{t("add")}</AddButton>
       </div>
     </div>
   );

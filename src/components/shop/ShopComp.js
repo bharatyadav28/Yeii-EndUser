@@ -8,19 +8,40 @@ import { ChevronRight } from "lucide-react";
 import { useState } from "react";
 import RecommendedList from "./RecommendedList";
 import { useSearchParams } from "next/navigation";
+import TopPicksList from "./TopPicksList";
+import CustomDialog from "../common/CustomDialog";
+import ProductDetails from "./ProductDetails";
+import CouponSidebar from "../common/CouponSidebar";
 
 const ShopComp = () => {
   const t = useTranslations("shopPage");
   const params = useSearchParams();
+  const [searchInput, setSearchInput] = useState("");
+  const [openDetials, setOpenDetails] = useState(false);
+  const [openSidebar, setOpenSidebar] = useState(false);
+  const [id, setId] = useState(null);
 
+  const handleOpenDetails = () => {
+    setOpenDetails((prev) => !prev);
+  };
+
+  const handleSidebar = () => {
+    setOpenSidebar((prev) => !prev);
+  };
+
+  const handleProductClick = (id) => {
+    console.log(id);
+    setId(id);
+    handleOpenDetails();
+  };
   const query = params.get("query");
   const category = params.get("category");
   const date = params.get("date");
   const type = params.get("type");
-  const [searchInput, setSearchInput] = useState("");
+
   return (
-    <div className="bg-[var(--light-gray)] h-full w-full ">
-      <div className="absolute -top-0 left-[50%] -translate-x-[50%] bottom-0 w-[60%] overflow-y-auto rounded-t-3xl pt-20 flex flex-col gap-7">
+    <>
+      <div className=" absolute top-20 left-[50%] -translate-x-[50%] bottom-0 w-[60%] rounded-t-3xl flex flex-col gap-7">
         <div className=" flex flex-col items-center bg-white gap-3 p-5 rounded-3xl">
           <Image
             src={shop.image}
@@ -43,10 +64,13 @@ const ShopComp = () => {
 
         {/* selected offer */}
         {shop.offers && (
-          <button className="bg-white rounded-2xl flex items-center justify-between p-2 px-3">
+          <div
+            onClick={handleSidebar}
+            className="bg-white rounded-2xl flex items-center justify-between p-2 px-3 cursor-pointer"
+          >
             <div className="flex items-center gap-2">
               <DiscountIcon width="44" />
-              <div>
+              <div className="">
                 <div className="text-base font-semibold">
                   {shop.offers[0].description}
                 </div>
@@ -59,7 +83,7 @@ const ShopComp = () => {
               {shop.offers.length - 1} {t("more_offers")}{" "}
               <ChevronRight size={24} />
             </div>
-          </button>
+          </div>
         )}
 
         {/* product search */}
@@ -74,12 +98,27 @@ const ShopComp = () => {
         </div>
 
         {/* top picks */}
-        {query && <div>Top Picks</div>}
+        {query && (
+          <TopPicksList
+            handleClick={handleProductClick}
+            data={shop.top_picks}
+          />
+        )}
 
         {/* recommended */}
-        <RecommendedList data={shop.recommended} />
+        <RecommendedList
+          handleClick={handleProductClick}
+          data={shop.recommended}
+        />
+
+        {/* product details dialog */}
+        <ProductDetails
+          openDetials={openDetials}
+          handleOpenDetails={handleOpenDetails}
+        />
       </div>
-    </div>
+      <CouponSidebar open={openSidebar} onOpenChange={handleSidebar} />
+    </>
   );
 };
 
