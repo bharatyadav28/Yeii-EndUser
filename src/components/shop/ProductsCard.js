@@ -2,9 +2,25 @@ import Image from "next/image";
 import { AddButton } from "../common/CustomButtons";
 import { useTranslations } from "use-intl";
 import { RatingHalf, RatingIcon } from "@/lib/svg_icons";
+import { useSelector } from "react-redux";
 
-const ProductsCard = ({ item, className, handleClick }) => {
+const ProductsCard = ({
+  item,
+  className,
+  handleClick,
+  addProduct,
+  removeProduct,
+}) => {
   const t = useTranslations("shopPage");
+
+  const count = useSelector((state) => state.cart.items[item.id]?.count || 0);
+
+  const onCountChange = (cnt) => {
+    //console.log({ count, cnt });
+    if (cnt > count) {
+      addProduct(item);
+    } else if (cnt < count) removeProduct(item.id);
+  };
 
   const getRatings = () => {
     const arr = [
@@ -22,9 +38,10 @@ const ProductsCard = ({ item, className, handleClick }) => {
   };
   return (
     <div
-      onClick={() => handleClick(item.id)}
+      onClick={() => handleClick(item.id, item)}
       className={
-        "my-2 p-3 bg-white rounded-3xl flex items-center gap-3 " + className
+        "my-2 p-3 bg-white rounded-3xl flex items-center gap-3 cursor-pointer " +
+        className
       }
     >
       <Image
@@ -41,7 +58,9 @@ const ProductsCard = ({ item, className, handleClick }) => {
           <div className="flex items-center">{getRatings()}</div>
           {item.rating.average + "(" + item.rating.total_reviews + ")"}
         </div>
-        <AddButton>{t("add")}</AddButton>
+        <AddButton count={count} onClick={onCountChange}>
+          {t("add")}
+        </AddButton>
       </div>
     </div>
   );

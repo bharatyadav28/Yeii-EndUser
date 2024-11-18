@@ -25,7 +25,7 @@ export const TextInput = (props) => {
     containerClass,
   } = props;
   let classes = `w-full border-none outline-none text-lg disabled:cursor-not-allowed ${
-    !customIcon && "ml-4"
+    !customIcon && "ml-4 "
   } ${className}`;
 
   return (

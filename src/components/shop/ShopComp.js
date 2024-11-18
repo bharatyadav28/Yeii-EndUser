@@ -9,9 +9,11 @@ import { useState } from "react";
 import RecommendedList from "./RecommendedList";
 import { useSearchParams } from "next/navigation";
 import TopPicksList from "./TopPicksList";
-import CustomDialog from "../common/CustomDialog";
 import ProductDetails from "./ProductDetails";
 import CouponSidebar from "../common/CouponSidebar";
+import { useDispatch } from "react-redux";
+import { addItem, removeItem } from "@/lib/store/feature/cart/slice";
+import CartNotice from "../common/CartNotice";
 
 const ShopComp = () => {
   const t = useTranslations("shopPage");
@@ -20,6 +22,9 @@ const ShopComp = () => {
   const [openDetials, setOpenDetails] = useState(false);
   const [openSidebar, setOpenSidebar] = useState(false);
   const [id, setId] = useState(null);
+  const [product, setProduct] = useState(null);
+
+  const dispatch = useDispatch();
 
   const handleOpenDetails = () => {
     setOpenDetails((prev) => !prev);
@@ -29,11 +34,26 @@ const ShopComp = () => {
     setOpenSidebar((prev) => !prev);
   };
 
-  const handleProductClick = (id) => {
+  const handleProductClick = (id, product) => {
     console.log(id);
     setId(id);
+    setProduct(product);
     handleOpenDetails();
   };
+
+  const addProduct = (item) => {
+    dispatch(
+      addItem({
+        suppierId: shop.id,
+        type: "product",
+        item,
+      })
+    );
+  };
+  const removeProduct = (id) => {
+    dispatch(removeItem({ id }));
+  };
+
   const query = params.get("query");
   const category = params.get("category");
   const date = params.get("date");
@@ -41,6 +61,7 @@ const ShopComp = () => {
 
   return (
     <>
+      <CartNotice />
       <div className=" absolute top-20 left-[50%] -translate-x-[50%] bottom-0 w-[60%] rounded-t-3xl flex flex-col gap-7">
         <div className=" flex flex-col items-center bg-white gap-3 p-5 rounded-3xl">
           <Image
@@ -102,6 +123,8 @@ const ShopComp = () => {
           <TopPicksList
             handleClick={handleProductClick}
             data={shop.top_picks}
+            addProduct={addProduct}
+            removeProduct={removeProduct}
           />
         )}
 
@@ -109,13 +132,20 @@ const ShopComp = () => {
         <RecommendedList
           handleClick={handleProductClick}
           data={shop.recommended}
+          addProduct={addProduct}
+          removeProduct={removeProduct}
         />
 
         {/* product details dialog */}
-        <ProductDetails
-          openDetials={openDetials}
-          handleOpenDetails={handleOpenDetails}
-        />
+        {product && (
+          <ProductDetails
+            product={product}
+            openDetials={openDetials}
+            handleOpenDetails={handleOpenDetails}
+            addProduct={addProduct}
+            removeProduct={removeProduct}
+          />
+        )}
       </div>
       <CouponSidebar open={openSidebar} onOpenChange={handleSidebar} />
     </>

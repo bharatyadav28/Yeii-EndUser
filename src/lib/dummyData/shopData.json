@@ -1,5 +1,6 @@
 {
   "shop": {
+    "id": 1,
     "name": "Tik Tok Events",
     "address": "123 Street, Mexico",
     "image": "/offerImage.png",
@@ -33,7 +34,8 @@
           "average": 4.0,
           "total_reviews": 1030
         },
-        "image_url": "/product-image.jpg"
+        "image_url": "/product-image.jpg",
+        "description": "Lorem ipsum dolor sit amet consectetur. Justo iaculis pellentesque ac nunc. Semper habitant ultrices mauris amet ac fermentum nisl at. Volutpat convallis amet proin vulputate vel imperdiet etiam. "
       },
       {
         "id": 2,
@@ -43,7 +45,8 @@
           "average": 4.0,
           "total_reviews": 1030
         },
-        "image_url": "/product-image.jpg"
+        "image_url": "/product-image.jpg",
+        "description": "Lorem ipsum dolor sit amet consectetur. Justo iaculis pellentesque ac nunc. Semper habitant ultrices mauris amet ac fermentum nisl at. Volutpat convallis amet proin vulputate vel imperdiet etiam. "
       },
       {
         "id": 3,
@@ -53,7 +56,8 @@
           "average": 4.0,
           "total_reviews": 1030
         },
-        "image_url": "/product-image.jpg"
+        "image_url": "/product-image.jpg",
+        "description": "Lorem ipsum dolor sit amet consectetur. Justo iaculis pellentesque ac nunc. Semper habitant ultrices mauris amet ac fermentum nisl at. Volutpat convallis amet proin vulputate vel imperdiet etiam. "
       },
       {
         "id": 4,
@@ -63,7 +67,8 @@
           "average": 4.0,
           "total_reviews": 1030
         },
-        "image_url": "/product-image.jpg"
+        "image_url": "/product-image.jpg",
+        "description": "Lorem ipsum dolor sit amet consectetur. Justo iaculis pellentesque ac nunc. Semper habitant ultrices mauris amet ac fermentum nisl at. Volutpat convallis amet proin vulputate vel imperdiet etiam. "
       }
     ],
     "top_picks": [
@@ -75,7 +80,8 @@
           "average": 4.0,
           "total_reviews": 1030
         },
-        "image_url": "/top-picks-image.jpeg"
+        "image_url": "/top-picks-image.jpeg",
+        "description": "Lorem ipsum dolor sit amet consectetur. Justo iaculis pellentesque ac nunc. Semper habitant ultrices mauris amet ac fermentum nisl at. Volutpat convallis amet proin vulputate vel imperdiet etiam. "
       },
       {
         "id": 2,
@@ -85,7 +91,8 @@
           "average": 4.0,
           "total_reviews": 1030
         },
-        "image_url": "/top-picks-image.jpeg"
+        "image_url": "/top-picks-image.jpeg",
+        "description": "Lorem ipsum dolor sit amet consectetur. Justo iaculis pellentesque ac nunc. Semper habitant ultrices mauris amet ac fermentum nisl at. Volutpat convallis amet proin vulputate vel imperdiet etiam. "
       },
       {
         "id": 3,
@@ -95,7 +102,8 @@
           "average": 4.0,
           "total_reviews": 1030
         },
-        "image_url": "/top-picks-image.jpeg"
+        "image_url": "/top-picks-image.jpeg",
+        "description": "Lorem ipsum dolor sit amet consectetur. Justo iaculis pellentesque ac nunc. Semper habitant ultrices mauris amet ac fermentum nisl at. Volutpat convallis amet proin vulputate vel imperdiet etiam. "
       },
       {
         "id": 4,
@@ -105,7 +113,8 @@
           "average": 4.0,
           "total_reviews": 1030
         },
-        "image_url": "/top-picks-image.jpeg"
+        "image_url": "/top-picks-image.jpeg",
+        "description": "Lorem ipsum dolor sit amet consectetur. Justo iaculis pellentesque ac nunc. Semper habitant ultrices mauris amet ac fermentum nisl at. Volutpat convallis amet proin vulputate vel imperdiet etiam. "
       },
       {
         "id": 5,
@@ -115,7 +124,8 @@
           "average": 4.0,
           "total_reviews": 1030
         },
-        "image_url": "/top-picks-image.jpeg"
+        "image_url": "/top-picks-image.jpeg",
+        "description": "Lorem ipsum dolor sit amet consectetur. Justo iaculis pellentesque ac nunc. Semper habitant ultrices mauris amet ac fermentum nisl at. Volutpat convallis amet proin vulputate vel imperdiet etiam. "
       },
       {
         "id": 6,
@@ -125,7 +135,8 @@
           "average": 4.0,
           "total_reviews": 1030
         },
-        "image_url": "/top-picks-image.jpeg"
+        "image_url": "/top-picks-image.jpeg",
+        "description": "Lorem ipsum dolor sit amet consectetur. Justo iaculis pellentesque ac nunc. Semper habitant ultrices mauris amet ac fermentum nisl at. Volutpat convallis amet proin vulputate vel imperdiet etiam. "
       },
       {
         "id": 7,
@@ -135,7 +146,8 @@
           "average": 4.0,
           "total_reviews": 1030
         },
-        "image_url": "/top-picks-image.jpeg"
+        "image_url": "/top-picks-image.jpeg",
+        "description": "Lorem ipsum dolor sit amet consectetur. Justo iaculis pellentesque ac nunc. Semper habitant ultrices mauris amet ac fermentum nisl at. Volutpat convallis amet proin vulputate vel imperdiet etiam. "
       }
     ]
   }

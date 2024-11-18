@@ -1,6 +1,7 @@
 import addressData from "@/lib/dummyData/addressData.json";
 import { useTranslations } from "next-intl";
 import AddressCard from "./AddressCard";
+import RecentLocations from "./RecentLocations";
 
 const AddressList = () => {
   const t = useTranslations("locationSidebar");
@@ -22,14 +23,7 @@ const AddressList = () => {
           ))}
         </>
       )}
-      {recentLocations && (
-        <>
-          <h1 className="text-base font-bold my-2 ">{t("recent_locations")}</h1>
-          {recentLocations.map((address) => (
-            <AddressCard key={address.id} isRecent={true} address={address} />
-          ))}
-        </>
-      )}
+      <RecentLocations recentLocations={recentLocations} t={t} />
     </div>
   );
 };

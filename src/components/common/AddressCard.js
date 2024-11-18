@@ -6,7 +6,7 @@ import { LightButton } from "./CustomButtons";
 const AddressCard = ({
   address,
   isSelected,
-  isRecent,
+  isCompleteScreen,
   mapAddress,
   onClick,
 }) => {
@@ -20,13 +20,12 @@ const AddressCard = ({
         </div>
       )}
       <div className="flex items-center gap-2">
-        {isRecent ? (
-          <div className="self-start p-2">{recentIcon}</div>
-        ) : (
-          <div className="p-2 bg-white rounded-full border-[1px] self-start text-white">
-            {isSelected || mapAddress ? locationIcon : locationIconBlack}
-          </div>
-        )}
+        <div className="p-2 bg-white rounded-full border-[1px] self-start text-white">
+          {isSelected || mapAddress || isCompleteScreen
+            ? locationIcon
+            : locationIconBlack}
+        </div>
+
         <div>
           <div className="text-sm font-bold flex items-center gap-1">
             {address.type}{" "}
@@ -38,14 +37,14 @@ const AddressCard = ({
             {address.address}
           </div>
         </div>
-        {!isRecent && !mapAddress && (
+        {!mapAddress && !isCompleteScreen && (
           <button className="p-1 bg-white rounded-full border-[1px] border-[var(--light-gray)]">
             <EllipsisVertical size={10} className="text-[var(--main-pink)]" />
           </button>
         )}
-        {mapAddress && (
+        {(mapAddress || isCompleteScreen) && (
           <LightButton
-            className="text-xs p-0 font-bold !text-[var(--main-pink)] border-2 !bg-white  "
+            className="text-xs !p-0 w-20  font-bold !text-[var(--main-pink)] border-2 !bg-white  "
             onClick={onClick}
           >
             {t("change")}

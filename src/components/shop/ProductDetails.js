@@ -1,12 +1,29 @@
-import product from "@/lib/dummyData/productDetails.json";
+// import product from "@/lib/dummyData/productDetails.json";
 import CustomDialog from "../common/CustomDialog";
 import Image from "next/image";
 import { RatingHalf, RatingIcon } from "@/lib/svg_icons";
 import { useTranslations } from "next-intl";
 import { AddButton } from "../common/CustomButtons";
+import { useSelector } from "react-redux";
 
-const ProductDetails = ({ openDetials, handleOpenDetails }) => {
+const ProductDetails = ({
+  openDetials,
+  handleOpenDetails,
+  addProduct,
+  removeProduct,
+  product,
+}) => {
   const t = useTranslations("shopPage");
+  const count = useSelector(
+    (state) => state.cart.items[product.id]?.count || 0
+  );
+
+  const onCountChange = (cnt) => {
+    //console.log({ count, cnt });
+    if (cnt > count) {
+      addProduct(product);
+    } else if (cnt < count) removeProduct(product.id);
+  };
 
   const getRatings = (rating) => {
     const arr = [
@@ -31,7 +48,7 @@ const ProductDetails = ({ openDetials, handleOpenDetails }) => {
       <>
         <div className="w-[582px] h-[330px] overflow-hidden relative">
           <Image
-            className="absolute -top-[70%]"
+            className="absolute "
             src={product.image_url}
             width={582}
             height={350}
@@ -64,7 +81,13 @@ const ProductDetails = ({ openDetials, handleOpenDetails }) => {
               {product.description}
             </div>
           </div>
-          <AddButton className="w-full !py-5 !h-12">{t("add")}</AddButton>
+          <AddButton
+            count={count}
+            onClick={onCountChange}
+            className="w-full !py-5 !h-12"
+          >
+            {t("add")}
+          </AddButton>
         </div>
       </>
     </CustomDialog>

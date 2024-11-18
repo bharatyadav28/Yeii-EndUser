@@ -130,26 +130,22 @@ export const CrossButton = (props) => {
 };
 
 export const AddButton = ({ children, ...props }) => {
-  const { onClick, className } = props;
-
-  const [cnt, setCnt] = useState(0);
-
-  const changeCount = (e) => {
-    e.stopPropagation();
-    setCnt(1);
-  };
+  const { onClick, className, count } = props;
 
   let classes = " !justify-between !p-0 self-stretch";
 
-  return cnt > 0 ? (
+  return count > 0 ? (
     <CounterInput
       className={classes}
-      value={cnt}
-      onChange={(data) => setCnt(data)}
+      value={count}
+      onChange={(data) => onClick(data)}
     />
   ) : (
     <LightButton
-      onClick={changeCount}
+      onClick={(e) => {
+        e.stopPropagation();
+        onClick(1);
+      }}
       className={
         "!text-[var(--main-pink)] hover:!bg-pink-100 py-1 font-bold " +
         className
