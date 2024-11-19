@@ -12,6 +12,7 @@ import { DarkButton, LightButton } from "../common/CustomButtons";
 import ManualSearch from "../common/ManualSearch";
 import { useRouter } from "next/navigation";
 import { format } from "date-fns";
+import CalenderDialog from "../common/CalenderDialog";
 
 const CustomHeader = () => {
   const t = useTranslations("calender");
@@ -59,7 +60,7 @@ const CustomHeader = () => {
           <SearchInput
             onClick={handleManualSearchOpen}
             className="w-[28vw]"
-            placeholder="Search"
+            placeholder={t("search")}
           />
           <button
             onClick={handleOpen}
@@ -70,36 +71,14 @@ const CustomHeader = () => {
         </div>
       </div>
       <LocationSidebar open={open} onOpenChange={handleClick} />
-      <CustomDialog
-        className="w-[320px] !bg-white"
-        open={openDialog}
+      <CalenderDialog
+        openDialog={openDialog}
         handleOpen={handleOpen}
-        title={t("title")}
-        crossStyle="top-0 right-0 !bg-[var(--light-gray)] !text-black p-0"
-      >
-        <p className="text-[0.67rem] text-[var(--main-gray)] text-center  ">
-          {t("subHeading")}
-        </p>
-        <Calendar
-          selectedDate={date}
-          setSelectedDate={(date) => setDate(date)}
-          expanded={true}
-        />
-        <div className="flex justify-end gap-1">
-          <LightButton
-            onClick={handleOpen}
-            className="border-2 p-1 w-20 text-xs rounded-2xl !bg-white hover:!bg-[var(--light-gray)] "
-          >
-            Cancel
-          </LightButton>
-          <DarkButton
-            onClick={handleCalenderSearch}
-            className="p-1 w-20 text-xs rounded-2xl"
-          >
-            Continue
-          </DarkButton>
-        </div>
-      </CustomDialog>
+        date={date}
+        setSelectedDate={(date) => setDate(date)}
+        handleContinue={handleCalenderSearch}
+      />
+
       <ManualSearch
         open={openManualSearch}
         handleOpen={handleManualSearchOpen}

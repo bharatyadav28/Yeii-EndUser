@@ -73,50 +73,6 @@
     ],
     "top_picks": [
       {
-        "id": 1,
-        "name": "Furniture with Tables",
-        "price": "$450",
-        "rating": {
-          "average": 4.0,
-          "total_reviews": 1030
-        },
-        "image_url": "/top-picks-image.jpeg",
-        "description": "Lorem ipsum dolor sit amet consectetur. Justo iaculis pellentesque ac nunc. Semper habitant ultrices mauris amet ac fermentum nisl at. Volutpat convallis amet proin vulputate vel imperdiet etiam. "
-      },
-      {
-        "id": 2,
-        "name": "Furniture with Tables",
-        "price": "$450",
-        "rating": {
-          "average": 4.0,
-          "total_reviews": 1030
-        },
-        "image_url": "/top-picks-image.jpeg",
-        "description": "Lorem ipsum dolor sit amet consectetur. Justo iaculis pellentesque ac nunc. Semper habitant ultrices mauris amet ac fermentum nisl at. Volutpat convallis amet proin vulputate vel imperdiet etiam. "
-      },
-      {
-        "id": 3,
-        "name": "Furniture with Tables",
-        "price": "$450",
-        "rating": {
-          "average": 4.0,
-          "total_reviews": 1030
-        },
-        "image_url": "/top-picks-image.jpeg",
-        "description": "Lorem ipsum dolor sit amet consectetur. Justo iaculis pellentesque ac nunc. Semper habitant ultrices mauris amet ac fermentum nisl at. Volutpat convallis amet proin vulputate vel imperdiet etiam. "
-      },
-      {
-        "id": 4,
-        "name": "Furniture with Tables",
-        "price": "$450",
-        "rating": {
-          "average": 4.0,
-          "total_reviews": 1030
-        },
-        "image_url": "/top-picks-image.jpeg",
-        "description": "Lorem ipsum dolor sit amet consectetur. Justo iaculis pellentesque ac nunc. Semper habitant ultrices mauris amet ac fermentum nisl at. Volutpat convallis amet proin vulputate vel imperdiet etiam. "
-      },
-      {
         "id": 5,
         "name": "Furniture with Tables",
         "price": "$450",
@@ -140,6 +96,50 @@
       },
       {
         "id": 7,
+        "name": "Furniture with Tables",
+        "price": "$450",
+        "rating": {
+          "average": 4.0,
+          "total_reviews": 1030
+        },
+        "image_url": "/top-picks-image.jpeg",
+        "description": "Lorem ipsum dolor sit amet consectetur. Justo iaculis pellentesque ac nunc. Semper habitant ultrices mauris amet ac fermentum nisl at. Volutpat convallis amet proin vulputate vel imperdiet etiam. "
+      },
+      {
+        "id": 8,
+        "name": "Furniture with Tables",
+        "price": "$450",
+        "rating": {
+          "average": 4.0,
+          "total_reviews": 1030
+        },
+        "image_url": "/top-picks-image.jpeg",
+        "description": "Lorem ipsum dolor sit amet consectetur. Justo iaculis pellentesque ac nunc. Semper habitant ultrices mauris amet ac fermentum nisl at. Volutpat convallis amet proin vulputate vel imperdiet etiam. "
+      },
+      {
+        "id": 9,
+        "name": "Furniture with Tables",
+        "price": "$450",
+        "rating": {
+          "average": 4.0,
+          "total_reviews": 1030
+        },
+        "image_url": "/top-picks-image.jpeg",
+        "description": "Lorem ipsum dolor sit amet consectetur. Justo iaculis pellentesque ac nunc. Semper habitant ultrices mauris amet ac fermentum nisl at. Volutpat convallis amet proin vulputate vel imperdiet etiam. "
+      },
+      {
+        "id": 10,
+        "name": "Furniture with Tables",
+        "price": "$450",
+        "rating": {
+          "average": 4.0,
+          "total_reviews": 1030
+        },
+        "image_url": "/top-picks-image.jpeg",
+        "description": "Lorem ipsum dolor sit amet consectetur. Justo iaculis pellentesque ac nunc. Semper habitant ultrices mauris amet ac fermentum nisl at. Volutpat convallis amet proin vulputate vel imperdiet etiam. "
+      },
+      {
+        "id": 11,
         "name": "Furniture with Tables",
         "price": "$450",
         "rating": {

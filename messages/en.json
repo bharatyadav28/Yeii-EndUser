@@ -89,15 +89,13 @@
 
   "homepage": {
     "heading": "Home",
-    "order_request": "Order Request",
-    "order_id": "Order id",
-    "availability": "Availability",
+    "offers": "Offers",
+    "search": "Search",
     "no_item_heading": "No order requests",
     "no_item_subHeading": "You dont have any new orders. Stay Tuned !",
     "go_to_store": "Go to store",
     "no_orders_heading": "You have no orders at this moment",
     "no_orders_subHeading": "build your online store with brincos dieras and get orders.",
-    "offers": "Offers",
     "visit_shop": "Visit shop",
     "view_all": "View all",
     "top_services": "Our Top Services Categories",
@@ -106,7 +104,9 @@
     "animations": "Animations",
     "photograph": "Photograph",
     "event_room": "Event rooms",
-    "showing_results": "Showing results for"
+    "showing_results": "Showing results for",
+    "on": "on",
+    "off": "Off"
   },
 
   "locationSidebar": {
@@ -137,6 +137,9 @@
 
   "calender": {
     "title": "Select Date",
+    "search": "Search",
+    "cancel": "Cancel",
+    "continue": "Continue",
     "subHeading": "Please Select Date that you want",
     "Mon": "Mon",
     "Tue": "Tue",
@@ -235,83 +238,6 @@
     "no_noti_subHeading": "No notifications yet. As soon as something important happens, you'll see it her"
   },
 
-  "storePage": {
-    "heading": "Store",
-    "upper": {
-      "products": "Products",
-      "services": "Services",
-      "product": "Product",
-      "service": "Service"
-    },
-    "lower": {
-      "products": "products",
-      "services": "services",
-      "product": "product",
-      "service": "service"
-    },
-    "add": "Add",
-    "edit": "Edit",
-    "details": "details",
-    "productListTitle": "My product list",
-    "serviceListTitle": "My service list",
-    "availableQuantity": "Available Quantity",
-    "availableTime": "Available Time",
-    "actualPrice": "Actual Price",
-    "quantity": "Quantity",
-    "discount": "Discount",
-    "discountedPrice": "Discounted Price",
-    "pricePlaceholder": "Enter price",
-    "couponEligibility": "Coupon Eligibility",
-    "availabilityTime": "Availability time",
-    "startWith": "Start with",
-    "endWith": "End with",
-    "name": "name",
-    "description": "Description",
-    "category": "Category",
-    "availability": "Availability",
-    "select_availability": "Select availability",
-    "image": "Image",
-    "upload_image": "Upload image",
-    "desc_placeholder": "Enter description",
-    "yes": "Yes",
-    "no": "No",
-    "time": "Time",
-    "per_hour": "Per hour",
-    "per_day": "Per day",
-    "products": {
-      "name_placeholder": "Enter product name",
-      "coupon_text": "Is this product eligible for coupons",
-      "cate_placeholder": "Select Product Category"
-    },
-    "services": {
-      "name_placeholder": "Enter product name",
-      "coupon_text": "Is this product eligible for coupons",
-      "cate_placeholder": "Select Service Category"
-    },
-
-    "cancel": "Cancel",
-    "confirm": "Confirm",
-    "close": "Close",
-    "save": "Save",
-
-    "productsDetails": "Product Details",
-    "servicesDetails": "Service Details",
-    "editproductsDetails": "Edit product ",
-    "editservicesDetails": "Edit service ",
-
-    "productsDelete": {
-      "title": "Delete product",
-      "description": "Are you sure you want to delete this product?"
-    },
-    "servicesDelete": {
-      "title": "Delete service",
-      "description": "Are you sure you want to delete this service?"
-    },
-
-    "emptyHeading": "No items in store.",
-    "emptyDescription": "You don't have any products listed in your store. You can sell products through the app by clicking on 'Add' to create a listing. "
-  },
-
   "profilePage": {
     "profile": "Profile",
 
@@ -390,5 +316,25 @@
     "content": "You already have a few items in cart from a different supplier. Are you sure you want to delete them",
     "cancel": "Cancel",
     "confirm": "Confirm"
+  },
+  "cartPage": {
+    "my_cart": "My Cart",
+    "recommended_products": "Recommended products",
+    "change": "Change",
+    "edit": "Edit",
+    "dates_for_rent": "Dates for rent",
+    "you_saved": "You Saved",
+    "on_this_order": "on this order",
+    "lets_go": "Let's go!",
+    "add_more": "Add more",
+    "payment_summary": "Payment summary",
+    "total_items": "Total Items",
+    "coupon_applied": "Coupon applied",
+    "discount": "Discount",
+    "total_cost": "Total Cost",
+    "total_amount": "Total amount",
+    "place_order": "Place Order",
+    "cart_is_empty": "Cart is Empty",
+    "go_to_home": "Go to Home"
   }
 }

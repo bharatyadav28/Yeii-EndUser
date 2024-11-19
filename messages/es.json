@@ -1,13 +1,13 @@
 {
   "dashboard": "tablero",
   "search": "Buscar",
-  "addImage": "Añadir Foto",
-  "filter": "Filtro",
+  "addImage": "Agregar imagen",
+  "filter": "Filtrar",
   "continue": "Continuar",
 
   "sidebar": {
     "home": "Inicio",
-    "cart": "Carro",
+    "cart": "Carrito",
     "orders": "Pedidos",
     "notification": "Notificación",
     "profile": "Perfil"
@@ -29,13 +29,13 @@
   "signupPage": {
     "heading": "Crear cuenta",
     "fullName": "Nombre completo",
-    "fullNamePlaceholder": "Introduce tu nombre completo",
+    "fullNamePlaceholder": "Introduce el nombre completo",
     "email": "Introduce el correo electrónico",
     "emailPlaceholder": "Introduce el correo electrónico",
     "phoneNumber": "Número de teléfono",
     "address": "Dirección",
     "addressPlaceholder": "Introduce la dirección",
-    "bussinessLabel": "¿Operas como?",
+    "bussinessLabel": "¿Estás operando como?",
     "bussinessPlaceholder": "Selecciona uno",
     "password": "Nueva contraseña",
     "confirmPassword": "Confirma la nueva contraseña",
@@ -43,7 +43,7 @@
     "privacy_policy": "política de privacidad",
     "terms1": "Al registrarte, aceptas los",
     "and": "y",
-    "terms2": ", incluido el uso de cookies",
+    "terms2": ", incluyendo el uso de cookies",
     "edit": "Editar",
     "save_changes": "Guardar cambios",
     "cancel": "Cancelar"
@@ -51,7 +51,7 @@
 
   "forgotPassword": {
     "heading": "Verificar correo electrónico",
-    "subHeading": "Introduce el correo electrónico asociado a tu cuenta para recibir un OTP y cambiar la contraseña.",
+    "subHeading": "Introduce la dirección de correo vinculada a tu cuenta para recibir un OTP y cambiar la contraseña.",
     "reset_password": "Restablecer contraseña",
     "email": "Introduce el correo electrónico",
     "emailPlaceholder": "Introduce el correo electrónico",
@@ -60,47 +60,87 @@
 
   "otpPage": {
     "heading": "Introduce el OTP",
-    "subHeading": "Introduce el correo electrónico asociado a tu cuenta para recibir un OTP y cambiar la contraseña.",
+    "subHeading": "Introduce la dirección de correo vinculada a tu cuenta para recibir un OTP y cambiar la contraseña.",
     "change": "Cambiar",
     "confirm": "Confirmar",
     "resend": "Reenviar OTP"
   },
 
   "resetPage": {
-    "heading": "Configurar nueva contraseña",
-    "subHeading": "Configura tu nueva contraseña para acceder a tus datos",
+    "heading": "Establecer nueva contraseña",
+    "subHeading": "Establece tu nueva contraseña para acceder a tus datos",
     "password": "Nueva contraseña",
     "confirmPassword": "Confirma la nueva contraseña",
     "reset_password": "Restablecer contraseña"
   },
 
   "passwordChanged": {
-    "headingFirst": "Contraseña cambiada ",
-    "headingLast": " exitosamente",
-    "subHeading": "Tu contraseña se ha cambiado con éxito.",
+    "headingFirst": "Contraseña cambiada",
+    "headingLast": "exitosamente",
+    "subHeading": "Tu contraseña ha sido cambiada con éxito.",
     "continue": "Continuar"
   },
 
   "accountCreated": {
-    "heading": "Cuenta creada con éxito",
-    "subHeading": "Tu cuenta ha sido creada con éxito.",
+    "heading": "Cuenta creada exitosamente",
+    "subHeading": "Tu cuenta ha sido creada con éxito",
     "continue": "Continuar"
   },
 
   "homepage": {
     "heading": "Inicio",
-    "order_request": "Solicitud de pedido",
-    "order_id": "ID del pedido",
-    "availability": "Disponibilidad",
+    "offers": "Ofertas",
+    "search": "Buscar",
     "no_item_heading": "No hay solicitudes de pedidos",
     "no_item_subHeading": "No tienes nuevos pedidos. ¡Mantente atento!",
     "go_to_store": "Ir a la tienda",
     "no_orders_heading": "No tienes pedidos en este momento",
-    "no_orders_subHeading": "Construye tu tienda en línea con brincos dieras y recibe pedidos."
+    "no_orders_subHeading": "Crea tu tienda online con Brincos Dieras y recibe pedidos.",
+    "visit_shop": "Visitar tienda",
+    "view_all": "Ver todo",
+    "top_services": "Nuestras principales categorías de servicios",
+    "top_products": "Nuestras principales categorías de productos",
+    "decoration": "Decoración",
+    "animations": "Animaciones",
+    "photograph": "Fotografía",
+    "event_room": "Salones de eventos",
+    "showing_results": "Mostrando resultados para",
+    "on": "encendido",
+    "off": "apagado"
+  },
+
+  "locationSidebar": {
+    "my_location": "Mi ubicación",
+    "search_placeholder": "Busca por área, nombre de calle...",
+    "use_my_location": "Usar mi ubicación actual",
+    "login_to_add": "Inicia sesión para agregar nueva dirección",
+    "add_new_address": "Agregar nueva dirección",
+    "select_location": "Seleccionar ubicación",
+    "change_location": "Cambiar ubicación",
+    "enter_complete_address": "Introduce la dirección completa",
+    "confirm_location": "Confirmar ubicación",
+    "change": "Cambiar",
+    "confirm": "Confirmar",
+    "selected_address": "Dirección seleccionada",
+    "saved_address": "Dirección guardada",
+    "recent_locations": "Ubicaciones recientes",
+    "home": "Casa",
+    "work": "Trabajo",
+    "hostel": "Hostal",
+    "other": "Otro",
+    "delivering_your_order": "Entregando tu pedido a",
+    "address_details": "Detalles de la dirección",
+    "flat_house_floor_building": "Apartamento / Número de casa / Piso / Edificio",
+    "nearby_landmark": "Punto de referencia cercano",
+    "confirm_address": "Confirmar dirección"
   },
 
   "calender": {
-    "title": "Calendario",
+    "title": "Seleccionar fecha",
+    "search": "Buscar",
+    "cancel": "Cancelar",
+    "continue": "Continuar",
+    "subHeading": "Selecciona la fecha que desees",
     "Mon": "Lun",
     "Tue": "Mar",
     "Wed": "Mié",
@@ -146,7 +186,7 @@
     "decline": "Rechazar",
     "order_id": "ID del pedido",
     "placed_on": "Realizado el",
-    "delivery_status": "Estado de la entrega",
+    "delivery_status": "Estado de entrega",
     "qyt": "Cantidad",
     "order_summary": "Resumen del pedido",
     "discount": "Descuento",
@@ -157,7 +197,7 @@
     "paid": "Pagado",
     "generate_invoice": "Generar factura",
     "update_order_status": "Actualizar estado del pedido",
-    "client_location": "Detalles de la ubicación del cliente",
+    "client_location": "Detalles de ubicación del cliente",
     "location": "Ubicación",
     "customer_details": "Detalles del cliente",
     "shipping": "Dirección de envío",
@@ -166,13 +206,13 @@
     "category": "Categoría",
     "order_placed": "Pedido realizado",
     "order_accepted": "Pedido aceptado",
-    "order_dispatched": "Pedido despachado",
-    "order_shipped": "Pedido enviado",
-    "out_for_delivery": "En camino",
+    "order_dispatched": "Pedido enviado",
+    "order_shipped": "Pedido despachado",
+    "out_for_delivery": "En camino para entrega",
     "delivered": "Entregado",
     "cancelled": "Cancelado",
-    "order_status_heading": "Por favor, selecciona un estado de pedido para mostrar al usuario final.",
-    "rewind_status": "Revertir estado",
+    "order_status_heading": "Selecciona un estado del pedido para mostrar al usuario final.",
+    "rewind_status": "Estado anterior",
     "confirm": "Confirmar",
     "order_status": "Estado del pedido",
 
@@ -181,8 +221,7 @@
     "today": "Hoy",
     "this_week": "Esta semana",
     "sortBy": "Ordenar por",
-    "filter": "Filtro",
-
+    "filter": "Filtrar",
     "emptyHeading": "Lista de Pedidos Vacía",
     "emptySubHeading": "Aún no tienes pedidos. ¡Explora nuestros productos y haz tu primer pedido hoy!",
     "explore_now": "Explorar Ahora",
@@ -195,176 +234,109 @@
     "heading": "Notificación",
     "today": "Hoy",
     "yesterday": "Ayer",
-    "no_noti_heading": "¡Mantente actualizado!",
-    "no_noti_subHeading": "Aún no hay notificaciones. Tan pronto como suceda algo importante, lo verás aquí."
-  },
-
-  "storePage": {
-    "heading": "Tienda",
-    "upper": {
-      "products": "Productos",
-      "services": "Servicios",
-      "product": "Producto",
-      "service": "Servicio"
-    },
-    "lower": {
-      "products": "productos",
-      "services": "servicios",
-      "product": "producto",
-      "service": "servicio"
-    },
-    "add": "Agregar",
-    "edit": "Editar",
-    "details": "detalles",
-    "productListTitle": "Mi lista de productos",
-    "serviceListTitle": "Mi lista de servicios",
-    "availableQuantity": "Cantidad disponible",
-    "availableTime": "Disponibilidad",
-    "actualPrice": "Precio actual",
-    "quantity": "Cantidad",
-    "discount": "Descuento",
-    "discountedPrice": "Precio con descuento",
-    "pricePlaceholder": "Ingrese precio",
-    "couponEligibility": "Elegibilidad para cupones",
-    "availabilityTime": "Tiempo de disponibilidad",
-    "startWith": "Empieza con",
-    "endWith": "Termina con",
-    "name": "Nombre",
-    "description": "Descripción",
-    "category": "Categoría",
-    "availability": "Disponibilidad",
-    "select_availability": "Seleccionar disponibilidad",
-    "image": "Imagen",
-    "upload_image": "Subir imagen",
-    "desc_placeholder": "Ingrese la descripción",
-    "yes": "Sí",
-    "no": "No",
-    "time": "Tiempo",
-    "per_hour": "Por hora",
-    "per_day": "Por día",
-    "products": {
-      "name_placeholder": "Ingrese el nombre del producto",
-      "coupon_text": "¿Este producto admite cupones?",
-      "cate_placeholder": "Seleccione la categoría del producto"
-    },
-    "services": {
-      "name_placeholder": "Ingrese el nombre del servicio",
-      "coupon_text": "¿Este servicio es elegible para cupones?",
-      "cate_placeholder": "Seleccione la categoría del servicio"
-    },
-    "cancel": "Cancelar",
-    "confirm": "Confirmar",
-    "close": "Cerrar",
-    "save": "Guardar",
-
-    "productsDetails": "Detalles del producto",
-    "servicesDetails": "Detalles del servicio",
-    "editproductsDetails": "Editar producto",
-    "editservicesDetails": "Editar servicio",
-
-    "productsDelete": {
-      "title": "Eliminar producto",
-      "description": "¿Estás seguro de que deseas eliminar este producto?"
-    },
-    "servicesDelete": {
-      "title": "Eliminar servicio",
-      "description": "¿Estás seguro de que deseas eliminar este servicio?"
-    },
-    "emptyHeading": "No items in store.",
-    "emptyDescription": "No tienes productos listados en tu tienda. Puedes vender productos a través de la aplicación haciendo clic en 'Agregar' para crear un anuncio."
+    "no_noti_heading": "¡Mantente informado!",
+    "no_noti_subHeading": "No hay notificaciones aún. En cuanto ocurra algo importante, lo verás aquí."
   },
 
   "profilePage": {
     "profile": "Perfil",
 
-    "manage_account": "Administrar cuenta",
-    "privacy_policy": "Política de privacidad",
-
-    "myTransaction": "Mi transacción",
-    "transaction": "Transacción",
-    "today": "Hoy",
-    "yesterday": "Ayer",
-
-    "myCoupon": "Mi cupón",
-    "create_new_coupon": "Crear nuevo cupón",
-    "coupons": "Cupones",
-    "save": "Guardar",
-    "desc": "descuento en este cupón",
-    "expiry_on": "Caducidad",
-    "edit": "Editar",
-    "delete": "Eliminar",
-    "coupon_details": "Detalles del cupón",
-    "edit_coupon": "Editar detalles del cupón",
-    "coupon_name": "Nombre del cupón",
-    "coupon_name_placeholder": "Ingresa el nombre del cupón",
-    "Coupon_description": "Descripción del cupón",
-    "coupon_description_placeholder": "Ingresa la descripción",
-    "discount": "Descuento",
-    "discount_placeholder": "Ingresa el precio",
-    "discounted_price": "Precio con descuento",
-    "discounted_price_placeholder": "Ingresa el precio",
-    "expiry_date": "Fecha de caducidad",
-    "usage_limit": "Límites de uso para los usuarios",
-    "generate_coupon": "Generar cupón",
-    "save_changes": "Guardar cambios",
-    "delete_coupon": "Eliminar cupón?",
-    "delete_coupon_description": "¿Estás seguro de que deseas eliminar tu cupón?",
-
-    "settings": "Configuración",
     "notifications": "Notificaciones",
 
-    "business_availability": "Disponibilidad del negocio",
-    "bus_avail_desc": "Elige la disponibilidad del negocio que se mostrará a los clientes",
-    "availability": "Disponibilidad",
-    "available": "Disponible",
-    "unavailable": "No disponible",
-    "all_day": "Todo el día",
-    "custom_days": "Días personalizados",
-    "select_date_time": "Selecciona los días y horas que prefieras",
-    "opening": "Apertura",
-    "closing": "Cierre",
-    "open": "Abrir",
-    "close": "Cerrar",
+    "manage_account": "Gestionar cuenta",
+
+    "settings": "Configuraciones",
 
     "language": "Idioma",
     "reset_Password": "Restablecer contraseña",
 
     "delete_account": "Eliminar cuenta",
-    "delete_account_desc": "¿Estás seguro de que deseas eliminar tu cuenta?",
+    "delete_account_desc": "¿Estás seguro de que quieres eliminar tu cuenta?",
 
-    "settlementPolicy": "Política de liquidación",
-    "p1": "El uso de la aplicación también está regido por nuestra Política de Privacidad [Enlace a la Política de Privacidad], que detalla cómo recopilamos, usamos y divulgamos tu información personal.",
-    "p2": "Al continuar utilizando la aplicación 'Brincos Dieras', reconoces que has leído, entendido y aceptado estos Términos de Uso. Si tienes alguna pregunta o inquietud, contáctanos en [Tu Información de Contacto].",
+    "privacy_policy": "Política de privacidad",
+    "p1": "El uso de la App también está regulado por nuestra Política de Privacidad [Enlace a la Política de Privacidad], que detalla cómo recopilamos, usamos y divulgamos tu información personal.",
+    "p2": "Al continuar usando la App 'Brincos Dieras', reconoces que has leído, entendido y aceptado estos Términos de Uso. Si tienes preguntas o inquietudes, contáctanos en [Tu Información de Contacto].",
     "p3": "¡Gracias por elegir 'Brincos Dieras' para mostrar tus ideas de negocio!",
 
-    "termsAndConditions": "Términos y condiciones",
-    "privacyPolicy": "Política de privacidad",
+    "termsAndConditions": "Términos y Condiciones",
     "welcomeTo": "Bienvenido a",
-    "t1": "Estos Términos de Uso rigen tu uso de la aplicación móvil `Brincos Dieras` proporcionada por nosotros. Al acceder o usar la aplicación, aceptas cumplir y estar sujeto a estos términos. Si no estás de acuerdo con estos términos, por favor no uses la aplicación.",
-    "h1": "Aceptación de los Términos",
-    "t2": "Al usar la aplicación, reconoces que has leído, entendido y aceptado estar sujeto a estos Términos de Uso. Estos términos pueden ser actualizados o modificados, y es tu responsabilidad revisarlos periódicamente.",
-    "h2": "Cuentas de Usuario",
-    "h2u1": "Para utilizar ciertas funciones de la aplicación, puede que se te pida crear una cuenta de usuario. Eres responsable de mantener la confidencialidad de la información de tu cuenta y contraseña.",
+    "t1": "Estos Términos de Uso rigen el uso de la aplicación móvil `Brincos Dieras` proporcionada por nosotros. Al acceder o usar la App, aceptas cumplir y estar sujeto a estos términos. Si no estás de acuerdo con estos términos, por favor no uses la App.",
+    "h1": "Aceptación de términos",
+    "t2": "Al usar la App, reconoces que has leído, entendido y aceptado estos Términos de Uso. Estos términos pueden ser actualizados o modificados, y es tu responsabilidad revisarlos periódicamente.",
+    "h2": "Cuentas de usuario",
+    "h2u1": "Para usar ciertas funciones de la App, es posible que debas crear una cuenta de usuario. Eres responsable de mantener la confidencialidad de la información y contraseña de tu cuenta.",
     "h2u2": "Aceptas proporcionar información precisa y completa al crear tu cuenta.",
-    "h3": "Conducta del Usuario",
-    "h3u1": "Al usar la aplicación, aceptas no:",
-    "h3u2": "Violar ninguna ley o regulación aplicable.",
+    "h3": "Conducta del usuario",
+    "h3u1": "Al usar la App, aceptas no:",
+    "h3u2": "Violar leyes o regulaciones aplicables.",
     "h3u3": "Infringir los derechos de otros. Publicar o compartir contenido dañino, abusivo o inapropiado.",
-    "h3u4": "Intentar acceder sin autorización a las cuentas de otros usuarios.",
+    "h3u4": "Intentar obtener acceso no autorizado a cuentas de otros usuarios.",
 
     "logout": "Cerrar sesión",
-    "logoutDescription": "¿Estás seguro de que deseas cerrar sesión?",
+    "logoutDescription": "¿Estás seguro de que quieres cerrar sesión?",
     "cancel": "Cancelar",
-    "confirm": "Confirmar",
+    "confirm": "Confirmar"
+  },
 
-    "Monday": "Lunes",
-    "Tuesday": "Martes",
-    "Wednesday": "Miércoles",
-    "Thursday": "Jueves",
-    "Friday": "Viernes",
-    "Saturday": "Sábado",
-    "Sunday": "Domingo",
+  "shopPage": {
+    "explore_products": "Explorar productos",
+    "search_products": "Buscar productos",
+    "offer_selected": "Oferta seleccionada",
+    "more_offers": "más ofertas",
+    "recommended": "Recomendado",
+    "add": "Agregar",
+    "top_picks": "Mejores elecciones de tu búsqueda",
+    "product_description": "Descripción del producto"
+  },
 
-    "filter": "Filtro"
+  "couponSidebar": {
+    "apply_coupon": "Aplicar cupón",
+    "type_and_apply_coupon": "Escribe y aplica el cupón",
+    "best_offers": "Mejores ofertas para ti",
+    "view_details": "Ver detalles",
+    "applied": "Aplicado",
+    "apply": "Aplicar"
+  },
+
+  "manualSearch": {
+    "search": "Buscar",
+    "search_for": "Buscar 'servicio'",
+    "recent_search": "Búsqueda reciente",
+    "top_services": "Nuestras principales categorías de servicios",
+    "top_products": "Nuestras principales categorías de productos"
+  },
+
+  "searchPage": {
+    "showing_result_for": "Mostrando resultados para",
+    "sort_by": "Ordenar por",
+    "no_shop_available": "No hay proveedores disponibles en tu selección",
+    "try_different_date": "de fecha, por favor intenta una fecha diferente"
+  },
+
+  "cartNotice": {
+    "heading": "¡Aviso de carrito!",
+    "content": "Ya tienes algunos artículos en el carrito de un proveedor diferente. ¿Estás seguro de que quieres eliminarlos?",
+    "cancel": "Cancelar",
+    "confirm": "Confirmar"
+  },
+  "cartPage": {
+    "my_cart": "Mi carrito",
+    "recommended_products": "Productos recomendados",
+    "change": "Cambiar",
+    "edit": "Editar",
+    "dates_for_rent": "Fechas para alquilar",
+    "you_saved": "Has ahorrado",
+    "on_this_order": "en este pedido",
+    "lets_go": "¡Vamos!",
+    "add_more": "Agregar más",
+    "payment_summary": "Resumen de pago",
+    "total_items": "Total de artículos",
+    "coupon_applied": "Cupón aplicado",
+    "discount": "Descuento",
+    "total_cost": "Costo total",
+    "total_amount": "Cantidad total",
+    "place_order": "Realizar pedido",
+    "cart_is_empty": "El carrito está vacío",
+    "go_to_home": "Ir al inicio"
   }
 }

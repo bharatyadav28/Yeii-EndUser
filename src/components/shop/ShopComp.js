@@ -47,7 +47,7 @@ const ShopComp = () => {
     dispatch(
       addItem({
         suppierId: shop.id,
-        type: "product",
+        type: item.type ?? "service",
         item,
       })
     );

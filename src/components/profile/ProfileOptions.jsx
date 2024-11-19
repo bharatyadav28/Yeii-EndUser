@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-import { useTranslations } from "use-intl";
 
 import {
   logoutIcon,
@@ -12,10 +11,9 @@ import {
 } from "@/lib/svg_icons";
 import { ChevronRight, LogOut } from "lucide-react";
 import { useRouter } from "next/navigation";
-
 import DeleteDialog from "../common/DeleteDialog";
 import OptionCard from "./OptionCard";
-// import { userLogout } from "@/lib/serverActions";
+import { useTranslations } from "next-intl";
 
 const ProfileOptions = () => {
   const t = useTranslations("profilePage");
@@ -65,7 +63,7 @@ const ProfileOptions = () => {
   ];
 
   const StartEndItems = (arr, index) => {
-    console.log(arr, index, index === 1 || index === arr.length);
+    // console.log(arr, index, index === 1 || index === arr.length);
     return index === 1 || index === arr.length;
   };
   return (

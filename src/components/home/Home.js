@@ -74,7 +74,7 @@ const Home = () => {
             <span className="text-[var(--main-pink)] font-bold">{date}</span>
           </div>
         )}
-        <OfferBox title="Offers">
+        <OfferBox t={t} title={t("offers")}>
           {offers.map((item, index) => (
             <OfferCard
               key={index}

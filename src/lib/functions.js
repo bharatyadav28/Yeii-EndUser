@@ -29,3 +29,12 @@ export function useGetLast12Months() {
 export const trimData = (data, length) => {
   return data.length > length ? data.slice(0, 27) + "..." : data;
 };
+
+export const getMonthAndDate = (date) => {
+  const year = date.getFullYear();
+  const monthIdx = date.getMonth();
+  const monthAbbr = new Date(year, monthIdx, 1).toLocaleString("default", {
+    month: "short",
+  });
+  return date.getDate() + " " + monthAbbr;
+};

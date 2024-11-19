@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Lemonade drinks",
+    "price": "$450",
+    "image_url": "/recommended.jpeg"
+  },
+  {
+    "id": 2,
+    "name": "Lemonade drinks",
+    "price": "$450",
+    "image_url": "/recommended.jpeg"
+  },
+  {
+    "id": 3,
+    "name": "Lemonade drinks",
+    "price": "$450",
+    "image_url": "/recommended.jpeg"
+  },
+  {
+    "id": 4,
+    "name": "Lemonade drinks",
+    "price": "$450",
+    "image_url": "/recommended.jpeg"
+  },
+  {
+    "id": 5,
+    "name": "Lemonade drinks",
+    "price": "$450",
+    "image_url": "/recommended.jpeg"
+  },
+  {
+    "id": 6,
+    "name": "Lemonade drinks",
+    "price": "$450",
+    "image_url": "/recommended.jpeg"
+  },
+  {
+    "id": 7,
+    "name": "Lemonade drinks",
+    "price": "$450",
+    "image_url": "/recommended.jpeg"
+  }
+]

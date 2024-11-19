@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { AddButton } from "../common/CustomButtons";
-import { useTranslations } from "use-intl";
 import { RatingHalf, RatingIcon } from "@/lib/svg_icons";
 import { useSelector } from "react-redux";
+import { useTranslations } from "next-intl";
 
 const ProductsCard = ({
   item,

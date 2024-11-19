@@ -1,10 +1,12 @@
 import { DiscountIcon } from "@/lib/svg_icons";
 import { ChevronRight } from "lucide-react";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
 const OfferCard = ({ item, className, path }) => {
+  const t = useTranslations("homepage");
   return (
     <div
       className={
@@ -14,8 +16,9 @@ const OfferCard = ({ item, className, path }) => {
     >
       <div className="flex flex-col gap-2 p-2">
         <div className="text-2xl text-[var(--lightblue)] font-bold ">
-          {item.discount}Off{" "}
-          <span className="text-sm text-gray-500 font-light ">on</span>
+          {item.discount}
+          {t("off")}{" "}
+          <span className="text-sm text-gray-500 font-light ">{t("on")}</span>
         </div>
         <div className="flex gap-1">
           <Image
@@ -31,7 +34,7 @@ const OfferCard = ({ item, className, path }) => {
           href={`/${path}/shop/${item.shopId}`}
           className="text-sm text-[var(--main-pink)] flex items-center gap-1 "
         >
-          Visit shop <ChevronRight size={14} />
+          {t("visit_shop")} <ChevronRight size={14} />
         </Link>
       </div>
       <div>

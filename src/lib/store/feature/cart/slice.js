@@ -50,7 +50,8 @@ const cartSlice = createSlice({
       if (state.items[action.payload.id].count === 0) {
         delete state.items[action.payload.id];
       }
-      if (state.items[action.payload.id]?.length === 0) {
+
+      if (Object.keys(state.items).length === 0) {
         state.suppierId = null;
         state.type = null;
       }

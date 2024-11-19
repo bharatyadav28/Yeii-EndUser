@@ -172,13 +172,13 @@ export const IconButton = ({ onClick, className, children, ...props }) => {
 };
 
 export const CounterInput = (props) => {
-  const { onChange, value, className } = props;
+  const { onChange, value, className, buttonClass, isService } = props;
   const [inputValue, setInputValue] = useState(value || 0);
 
   useEffect(() => {
     onChange(inputValue);
   }, [inputValue]);
-  let classes = "!bg-[#E5E5E5] !hover:bg-[#E5E5E5] p-4 ";
+  let classes = "!bg-[#E5E5E5] !hover:bg-[#E5E5E5] p-4 " + buttonClass;
 
   return (
     <div
@@ -197,7 +197,10 @@ export const CounterInput = (props) => {
       >
         -
       </IconButton>
-      <div>{value}</div>
+      <div>
+        {value}
+        {isService ? "hr" : ""}
+      </div>
       <IconButton
         className={classes}
         onClick={(e) => {
