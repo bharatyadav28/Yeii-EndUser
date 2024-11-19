@@ -1,10 +1,17 @@
-import { profileBg } from "@/lib/svg_icons";
+import { useTranslations } from "next-intl";
+
+import DashboardPage from "@/components/common/DashboardPage";
+import PageHeading from "@/components/common/PageHeading";
+import OrdersList from "@/components/orders/OrdersList";
 
 const page = () => {
+  const t = useTranslations("orderDetails");
+
   return (
-    <div className="flex justify-center bg-[var(--light-gray)] rounded-2xl m-5 overflow-hidden">
-      <div className="!blur-3xl flex">{profileBg}</div>
-    </div>
+    <DashboardPage>
+      <PageHeading pageName={t("Orders")} />
+      <OrdersList />
+    </DashboardPage>
   );
 };
 

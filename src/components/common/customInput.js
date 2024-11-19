@@ -224,7 +224,7 @@ export const SearchInput = (props) => {
       <input
         {...props}
         className={
-          "pl-2 outline-none placeholder:text-sm placeholder:text-[var(--main-gray)] " +
+          "pl-2 outline-none placeholder:text-sm placeholder:text-[var(--main-gray)] !flex-grow " +
           inputClass
         }
         value={value}
