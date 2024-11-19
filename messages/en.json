@@ -105,7 +105,8 @@
     "decoration": "Decoration",
     "animations": "Animations",
     "photograph": "Photograph",
-    "event_room": "Event rooms"
+    "event_room": "Event rooms",
+    "showing_results": "Showing results for"
   },
 
   "locationSidebar": {
@@ -119,12 +120,19 @@
     "enter_complete_address": "Enter Complete Address",
     "confirm_location": "Confirm Location",
     "change": "Change",
+    "confirm": "Confirm",
     "selected_address": "Selected Address",
     "saved_address": "Saved Address",
     "recent_locations": "Recent Locations",
     "home": "Home",
     "work": "Work",
-    "hostel": "Hostel"
+    "hostel": "Hostel",
+    "other": "Other",
+    "delivering_your_order": "Delivering Your order to",
+    "address_details": "Address details",
+    "flat_house_floor_building": "Flat / House no / Floor / Building",
+    "nearby_landmark": "Nearby Landmark",
+    "confirm_address": "Confirm Address"
   },
 
   "calender": {
@@ -350,7 +358,17 @@
     "offer_selected": "Offer selected",
     "more_offers": "more offers",
     "recommended": "Recommended",
-    "add": "Add"
+    "add": "Add",
+    "top_picks": "Top Picks from your search",
+    "product_description": "Product Description"
+  },
+  "couponSidebar": {
+    "apply_coupon": "Apply coupon",
+    "type_and_apply_coupon": "Type and apply coupon",
+    "best_offers": "Best Offers for you",
+    "view_details": "View details",
+    "applied": "Applied",
+    "apply": "Apply"
   },
   "manualSearch": {
     "search": "Search",
@@ -362,6 +380,15 @@
 
   "searchPage": {
     "showing_result_for": "Showing result for",
-    "sort_by": "Sort by"
+    "sort_by": "Sort by",
+    "no_shop_available": "No Suppliers available on your selected",
+    "try_different_date": "date please try different date"
+  },
+
+  "cartNotice": {
+    "heading": "Cart Notice !",
+    "content": "You already have a few items in cart from a different supplier. Are you sure you want to delete them",
+    "cancel": "Cancel",
+    "confirm": "Confirm"
   }
 }

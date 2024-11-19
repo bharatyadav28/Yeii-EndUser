@@ -96,7 +96,7 @@ const Calendar = ({ expanded, selectedDate, setSelectedDate, className }) => {
                 ? "bg-[var(--main-pink)] text-white"
                 : isWeekend(format(day, "yyyy-MM-dd"))
                 ? "hover:bg-black/50 duration-300 hover:text-black text-[var(--lightblue)]"
-                : "text-black hover:bg-black/50 duration-300"
+                : "text-[var(--main-gray)] hover:bg-black/50 hover:text-white duration-300"
             }`}
             onClick={() => setSelectedDate(cloneDay)}
           >

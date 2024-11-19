@@ -2,10 +2,12 @@ import DashboardPage from "@/components/common/DashboardPage";
 import MainHeader from "@/components/common/MainHeader";
 import OfferCard from "@/components/home/OfferCard";
 import { offersIcon } from "@/lib/svg_icons";
-import { offers } from "@/lib/dummyData/offersData.json";
+import offersData from "@/lib/dummyData/offersData.json";
 
 const OffersPage = () => {
   const heading = <h1 className="text-xl font-bold text-white ">Offers</h1>;
+
+  const { offers } = offersData;
   return (
     <DashboardPage>
       <MainHeader heading={heading} icon={offersIcon} route="/" />

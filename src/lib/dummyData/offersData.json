@@ -140,5 +140,49 @@
       "shopId": 1,
       "image": "/offerImage.png"
     }
+  ],
+  "coupons": [
+    {
+      "id": 1,
+      "offerCode": "50Off",
+      "description": "Save up to $75 with this code",
+      "details": "Use code 50Off to get flat up to $75 on this code",
+      "status": "Applied"
+    },
+    {
+      "id": 2,
+      "offerCode": "50Off",
+      "description": "Save up to $75 with this code",
+      "details": "Use code 50Off to get flat up to $75 on this code",
+      "status": "Apply"
+    },
+    {
+      "id": 3,
+      "offerCode": "50Off",
+      "description": "Save up to $75 with this code",
+      "details": "Use code 50Off to get flat up to $75 on this code",
+      "status": "Apply"
+    },
+    {
+      "id": 4,
+      "offerCode": "50Off",
+      "description": "Save up to $75 with this code",
+      "details": "Use code 50Off to get flat up to $75 on this code",
+      "status": "Apply"
+    },
+    {
+      "id": 5,
+      "offerCode": "50Off",
+      "description": "Save up to $75 with this code",
+      "details": "Use code 50Off to get flat up to $75 on this code",
+      "status": "Apply"
+    },
+    {
+      "id": 6,
+      "offerCode": "50Off",
+      "description": "Save up to $75 with this code",
+      "details": "Use code 50Off to get flat up to $75 on this code",
+      "status": "Apply"
+    }
   ]
 }

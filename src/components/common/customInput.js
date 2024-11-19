@@ -25,7 +25,7 @@ export const TextInput = (props) => {
     containerClass,
   } = props;
   let classes = `w-full border-none outline-none text-lg disabled:cursor-not-allowed ${
-    !customIcon && "ml-4"
+    !customIcon && "ml-4 "
   } ${className}`;
 
   return (
@@ -159,7 +159,7 @@ export const CustomCheckBox = ({ className, onChange, value }) => {
 
 export const IconButton = ({ onClick, className, children, ...props }) => {
   let classes =
-    " bg-[var(--light)] hover:bg-[var(--light)]  text-black p-0 text-sm  rounded-full my-0 max-h-max";
+    " bg-[var(--light)] hover:bg-[var(--light)]  text-black p-0 text-sm  rounded-full my-0 ";
   if (className) {
     classes += " " + className;
   }
@@ -178,31 +178,32 @@ export const CounterInput = (props) => {
   useEffect(() => {
     onChange(inputValue);
   }, [inputValue]);
-  let classes = "!bg-[#E5E5E5] !hover:bg-[#E5E5E5] p-3 h-3";
+  let classes = "!bg-[#E5E5E5] !hover:bg-[#E5E5E5] p-4 ";
 
   return (
     <div
       className={
-        "flex  mb-2 h-full bg-[var(--light)] justify-center items-center px-5  text-[0.8rem] rounded-xl " +
+        "flex bg-[var(--light)] justify-center items-center px-5  text-[0.8rem] rounded-xl " +
         className
       }
     >
       <IconButton
         className={classes}
-        onClick={() => setInputValue((prev) => Number(prev) - 1)}
+        onClick={(e) => {
+          e.stopPropagation();
+          setInputValue((prev) => Number(prev) - 1);
+        }}
         disabled={props.disabled}
       >
         -
       </IconButton>
-      <input
-        {...props}
-        type="text"
-        value={inputValue}
-        className="w-full text-center disabled:cursor-not-allowed"
-      />
+      <div>{value}</div>
       <IconButton
         className={classes}
-        onClick={() => setInputValue((prev) => Number(prev) + 1)}
+        onClick={(e) => {
+          e.stopPropagation();
+          setInputValue((prev) => Number(prev) + 1);
+        }}
         disabled={props.disabled}
       >
         +
@@ -211,16 +212,17 @@ export const CounterInput = (props) => {
   );
 };
 
-export const SearchInput = (props) => {
-  const { className, inputClass, value, onChange, placeholder } = props;
+export const SearchInput = ({ children, ...props }) => {
+  const { className, inputClass, value, onChange, placeholder, searchIcon } =
+    props;
   return (
     <div
       className={
-        "flex bg-white rounded-2xl p-3 px-4 text-[var(--main-gray)] " +
+        "flex items-center bg-white rounded-2xl p-3 px-4 text-[var(--main-gray)] " +
         className
       }
     >
-      <Search />
+      {searchIcon !== false && <Search />}
       <input
         {...props}
         className={
@@ -231,6 +233,7 @@ export const SearchInput = (props) => {
         onChange={onChange}
         placeholder={placeholder}
       />
+      {children}
     </div>
   );
 };
