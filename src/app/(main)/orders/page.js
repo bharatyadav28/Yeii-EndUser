@@ -4,7 +4,7 @@ import DashboardPage from "@/components/common/DashboardPage";
 import PageHeading from "@/components/common/PageHeading";
 import OrdersList from "@/components/orders/OrdersList";
 
-const page = () => {
+const OrdersPage = () => {
   const t = useTranslations("orderDetails");
 
   return (
@@ -15,4 +15,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default OrdersPage;
