@@ -216,8 +216,15 @@
     "Orders": "Orders",
     "MyOrders": "MyOrders",
     "today": "Today",
+    "this_week": "This week",
     "sortBy": "Sort By",
-    "filter": "Filter"
+    "filter": "Filter",
+    "emptyHeading": "Empty Order List",
+    "emptySubHeading": "You don't have any orders yet. Browse our products and place your first order today!",
+    "explore_now": "Explore Now",
+
+    "Out for delivery": "Out for delivery",
+    "Delivered": "Delivered"
   },
 
   "notificationPage": {

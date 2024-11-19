@@ -14,14 +14,14 @@ import { DarkButton, LightButton } from "../common/CustomButtons";
 import { editIcon } from "@/lib/svg_icons";
 
 const MainComp = ({ isEdit, setIsEdit }) => {
+  const { user } = userData;
   const [formData, setFormData] = useState({
-    name: user.name,
+    name: user?.name,
     phoneNumber: user.phoneNumber,
     email: user.email,
     operating_as: user.operating_as,
     address: user.address,
   });
-  const { user } = userData;
 
   const t = useTranslations("signupPage");
 

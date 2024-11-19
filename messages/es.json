@@ -179,8 +179,16 @@
     "Orders": "Pedidos",
     "MyOrders": "Mis Pedidos",
     "today": "Hoy",
+    "this_week": "Esta semana",
     "sortBy": "Ordenar por",
-    "filter": "Filtro"
+    "filter": "Filtro",
+
+    "emptyHeading": "Lista de Pedidos Vacía",
+    "emptySubHeading": "Aún no tienes pedidos. ¡Explora nuestros productos y haz tu primer pedido hoy!",
+    "explore_now": "Explorar Ahora",
+
+    "Out for delivery": "En camino para entrega",
+    "Delivered": "Entregado"
   },
 
   "notificationPage": {
