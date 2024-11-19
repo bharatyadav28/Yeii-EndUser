@@ -1,11 +1,12 @@
 import { useTranslations } from "next-intl";
 import RecentLocations from "./RecentLocations";
-import { recentLocations } from "@/lib/dummyData/addressData.json";
+import data from "@/lib/dummyData/addressData.json";
 import { DarkButton } from "./CustomButtons";
 import { status } from "@/lib/constants";
 
 const ChangeLocation = ({ changeState }) => {
   const t = useTranslations("locationSidebar");
+  const { recentLocations } = data;
   return (
     <>
       <h1 className="text-lg font-bold text-center mt-2 mb-5">

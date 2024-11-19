@@ -1,5 +1,5 @@
 import { useTranslations } from "next-intl";
-import recommendedData from "@/lib/dummyData/recommendedData.json";
+import recommendedData from "@/lib/dummyData/RecommendedData.json";
 import Image from "next/image";
 import { DarkButton } from "../common/CustomButtons";
 import { Plus } from "lucide-react";
@@ -32,6 +32,8 @@ const Recommended = () => {
   const suppierId = useSelector((state) => state.cart.suppierId);
   const dispatch = useDispatch();
 
+  const { recommended } = recommendedData;
+
   const addProduct = (item) => {
     dispatch(
       addItem({
@@ -45,7 +47,7 @@ const Recommended = () => {
     <div className="bg-white rounded-2xl p-5 max-w-[100%]">
       <div className="mb-3">{t("recommended_products")}</div>
       <div className="flex gap-3 !overflow-x-auto w-full">
-        {recommendedData.map((product) => (
+        {recommended.map((product) => (
           <ProductCard
             key={product.id}
             product={product}
