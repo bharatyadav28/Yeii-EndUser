@@ -43,13 +43,13 @@ const ItemCard = ({ item, addProduct, removeProduct, isService }) => {
 };
 const ItemsList = ({ cartArr }) => {
   const isService = useSelector((state) => state.cart.type === "service");
-  const suppierId = useSelector((state) => state.cart.suppierId);
+  const supplierId = useSelector((state) => state.cart.supplierId);
   const dispatch = useDispatch();
 
   const addProduct = (item) => {
     dispatch(
       addItem({
-        suppierId: suppierId,
+        supplierId: supplierId,
         type: item.type ?? "service",
         item,
       })

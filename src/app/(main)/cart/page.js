@@ -7,7 +7,7 @@ const CartPage = () => {
   const t = useTranslations("cartPage");
   return (
     <DashboardPage>
-      <PageHeading pageName={t("my_cart")} />
+      <PageHeading className="!pt-5 !pb-4" pageName={t("my_cart")} />
       <CartMain />
     </DashboardPage>
   );

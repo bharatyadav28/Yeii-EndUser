@@ -46,7 +46,7 @@ const ShopComp = () => {
   const addProduct = (item) => {
     dispatch(
       addItem({
-        suppierId: shop.id,
+        supplierId: shop.id,
         type: item.type ?? "service",
         item,
       })

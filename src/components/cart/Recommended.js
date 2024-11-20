@@ -29,7 +29,7 @@ const ProductCard = ({ product, addProduct }) => {
 };
 const Recommended = () => {
   const t = useTranslations("cartPage");
-  const suppierId = useSelector((state) => state.cart.suppierId);
+  const supplierId = useSelector((state) => state.cart.supplierId);
   const dispatch = useDispatch();
 
   const { recommended } = recommendedData;
@@ -37,7 +37,7 @@ const Recommended = () => {
   const addProduct = (item) => {
     dispatch(
       addItem({
-        suppierId: suppierId,
+        supplierId: supplierId,
         type: item.type ?? "service",
         item,
       })

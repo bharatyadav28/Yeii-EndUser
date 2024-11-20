@@ -1,34 +1,32 @@
 const { createSlice } = require("@reduxjs/toolkit");
 
+let initialState = JSON.parse(localStorage.getItem("cart"));
+
 const cartSlice = createSlice({
   name: "cart",
-  initialState: {
-    suppierId: null,
-    type: null,
-    items: {},
-    canAdd: true,
-  },
+  initialState: initialState?.supplierId
+    ? initialState
+    : {
+        supplierId: null,
+        type: null,
+        items: {},
+        canAdd: true,
+      },
   reducers: {
-    // addItemRequest: (state, action) => {
-    //   if (
-    //     action.payload.suppierId !== state.suppierId ||
-    //     (state.type && action.payload.type !== state.type)
-    //   ) {
-    //     state.canAdd = false;
-    //   }
-    // },
     addRequestSuccess: (state) => {
       state.canAdd = true;
-      state.suppierId = null;
+      state.supplierId = null;
       state.type = null;
       state.items = {};
+      localStorage.setItem("cart", JSON.stringify(state));
     },
     cancelAddRequest: (state) => {
       state.canAdd = true;
+      localStorage.setItem("cart", JSON.stringify(state));
     },
     addItem: (state, action) => {
       if (
-        (state.suppierId && action.payload.suppierId !== state.suppierId) ||
+        (state.supplierId && action.payload.supplierId !== state.supplierId) ||
         (state.type && action.payload.type !== state.type)
       ) {
         state.canAdd = false;
@@ -41,9 +39,10 @@ const cartSlice = createSlice({
             count: 1,
           };
         }
-        state.suppierId = action.payload.suppierId;
+        state.supplierId = action.payload.supplierId;
         state.type = action.payload.type;
       }
+      localStorage.setItem("cart", JSON.stringify(state));
     },
     removeItem: (state, action) => {
       state.items[action.payload.id].count--;
@@ -52,9 +51,10 @@ const cartSlice = createSlice({
       }
 
       if (Object.keys(state.items).length === 0) {
-        state.suppierId = null;
+        state.supplierId = null;
         state.type = null;
       }
+      localStorage.setItem("cart", JSON.stringify(state));
     },
   },
 });

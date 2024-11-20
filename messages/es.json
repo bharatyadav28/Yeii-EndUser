@@ -337,6 +337,8 @@
     "total_amount": "Cantidad total",
     "place_order": "Realizar pedido",
     "cart_is_empty": "El carrito está vacío",
-    "go_to_home": "Ir al inicio"
+    "go_to_home": "Ir al inicio",
+    "more_offers": "más ofertas",
+    "apply_coupon": "Aplicar cupón"
   }
 }

@@ -8,12 +8,13 @@ import { useSelector } from "react-redux";
 import { useRouter } from "next/navigation";
 import Recommended from "./Recommended";
 import LocationAndDate from "./LocationAndDate";
-import SavingCard from "./SavingCard";
 import PaymentSummary from "./PaymentSummary";
+import CouponSection from "./CouponSection";
 
 const CartMain = () => {
   const t = useTranslations("cartPage");
   const cartObj = useSelector((state) => state.cart.items);
+  const supplierId = useSelector((state) => state.cart.supplierId);
   const router = useRouter();
 
   const cartArr = [];
@@ -23,14 +24,17 @@ const CartMain = () => {
     <div className="flex flex-grow overflow-hidden p-6 gap-5">
       <div className="flex-grow flex flex-col overflow-hidden">
         <ItemsList cartArr={cartArr} />
-        <LightButton className="w-full !bg-white !text-[var(--main-pink)]">
+        <LightButton
+          onClick={() => router.push(`/add/shop/${supplierId}`)}
+          className="w-full !bg-white !text-[var(--main-pink)]"
+        >
           <Plus /> {t("add_more")}
         </LightButton>
       </div>
       <div className="flex flex-col gap-4 w-full !h-full bg-[var(--light-gray)] rounded-2xl p-3 max-w-[42%]">
         <Recommended />
         <LocationAndDate />
-        <SavingCard />
+        <CouponSection />
         <PaymentSummary />
       </div>
     </div>
