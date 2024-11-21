@@ -91,7 +91,7 @@ export const SelectInput = (props) => {
         >
           <SelectTrigger
             className={
-              "rounded-[15px] pl-0 !w-full disabled:cursor-not-allowed text-sm " +
+              "outline-none border-none pl-0 !w-full disabled:cursor-not-allowed text-sm " +
               className
             }
           >

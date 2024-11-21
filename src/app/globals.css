@@ -150,3 +150,15 @@ body {
   border-top: 1px solid;
   border-color: var(--main-gray);
 }
+
+.auth-heading {
+  background: linear-gradient(
+    272deg,
+    #79023e -1.11%,
+    #ff268e 57.67%,
+    #78003c 96.23%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

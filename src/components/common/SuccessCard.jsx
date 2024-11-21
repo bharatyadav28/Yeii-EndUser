@@ -12,7 +12,7 @@ const SuccessCard = ({ heading, subHeading, route }) => {
 
   return (
     <div className="relative">
-      <div className="w-[115px] h-[60px]   border-[#9FB1DA] border-[8px] rounded-b-full absolute  left-1/2 -translate-x-1/2 "></div>
+      <div className="w-[115px] h-[60px]   border-transparent border-[8px] rounded-b-full absolute  left-1/2 -translate-x-1/2 "></div>
       <div className="absolute -top-12 left-1/2 -translate-x-1/2 w-[100px] h-[100px] border-[8px] flex justify-center items-center bg-[var(--main-green)] rounded-full">
         <Check className="text-white" />
       </div>

@@ -23,7 +23,10 @@
     "login": "Login",
     "createAccount": "Create account",
     "dontHaveAccount": "Don’t have an account?",
-    "forgotPassword": "Forgot password"
+    "forgotPassword": "Forgot password",
+    "or": "or",
+    "continue_with_google": "Continue With Google",
+    "continue_as_guest": "Continue as Guest"
   },
 
   "signupPage": {
@@ -50,7 +53,7 @@
   },
 
   "forgotPassword": {
-    "heading": "Verify email id",
+    "heading": "Forgot password",
     "subHeading": "Please enter the email address linked with your account to Receive OTP to change password.",
     "reset_password": "Reset password",
     "email": "Enter Email id",

@@ -1,4 +1,3 @@
-import { ChevronLeft } from "lucide-react";
 import { useState } from "react";
 import LocationComponent from "./LocationComponent";
 import { status } from "@/lib/constants";
@@ -9,6 +8,13 @@ import CustomSidebar from "./CustomSidebar";
 
 const LocationSidebar = ({ open, onOpenChange }) => {
   const [sideBarState, setSideBarState] = useState(status.location);
+
+  const slides = {
+    [status.location]: LocationComponent,
+    [status.map]: MapComponent,
+    [status.change_location]: ChangeLocation,
+    [status.complete_address]: CompleteAddress,
+  };
 
   const handleClick = () => {
     switch (sideBarState) {
@@ -30,20 +36,8 @@ const LocationSidebar = ({ open, onOpenChange }) => {
   const changeState = (value) => {
     setSideBarState(value);
   };
-  const getComponent = () => {
-    switch (sideBarState) {
-      case status.location:
-        return <LocationComponent changeState={changeState} />;
-      case status.map:
-        return <MapComponent changeState={changeState} />;
-      case status.change_location:
-        return <ChangeLocation changeState={changeState} />;
-      case status.complete_address:
-        return <CompleteAddress changeState={changeState} />;
-      default:
-        break;
-    }
-  };
+
+  const Handler = slides[sideBarState];
 
   return (
     <CustomSidebar
@@ -52,7 +46,7 @@ const LocationSidebar = ({ open, onOpenChange }) => {
       handleClick={handleClick}
       className="left-0  animate-slide"
     >
-      {getComponent()}
+      <Handler changeState={changeState} />
     </CustomSidebar>
   );
 };

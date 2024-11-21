@@ -25,7 +25,7 @@ const CartMain = () => {
       <div className="flex-grow flex flex-col overflow-hidden">
         <ItemsList cartArr={cartArr} />
         <LightButton
-          onClick={() => router.push(`/add/shop/${supplierId}`)}
+          onClick={() => router.push(`/cart/shop/${supplierId}`)}
           className="w-full !bg-white !text-[var(--main-pink)]"
         >
           <Plus /> {t("add_more")}

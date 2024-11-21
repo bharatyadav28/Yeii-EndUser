@@ -12,7 +12,7 @@ const SuccessPage = ({ params }) => {
   );
 
   return (
-    <AuthPage>
+    <AuthPage showLogo={true}>
       {path === "password_changed" ? (
         <SuccessCard
           heading={
