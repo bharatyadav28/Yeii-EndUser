@@ -12,7 +12,7 @@ const ItemCard = ({ item, index, className }) => {
           height={100}
         />
       </div>
-      <div className={`text-[0.72rem] font-semibold`}>{item.name}</div>
+      <div className={`text-[0.75rem] font-semibold`}>{item.name}</div>
     </div>
   );
 };

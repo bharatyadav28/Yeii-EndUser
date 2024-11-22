@@ -11,11 +11,11 @@ const MenuButton = ({ label, Icon, list, isCheckBox = false, t }) => {
   return (
     <div className="relative">
       <TransparentButton
-        className="text-[0.8rem] flex items-center  w-max  !py-4 !border-0  rounded-full"
+        className="text-[0.8rem] flex items-center  w-max  !py-4 !border-0  rounded-full gap-0"
         onClick={handleMenuOpen}
       >
         <div> {label}</div>
-        <Icon className="ml-2" size={16} />
+        <Icon className="ml-1" size={16} />
       </TransparentButton>
       {menuOpen && (
         <ListModal

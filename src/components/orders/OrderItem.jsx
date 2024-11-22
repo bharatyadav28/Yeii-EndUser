@@ -10,11 +10,12 @@ function OrdersListItem({ order, t }) {
   const [openDialog, setOpenDialog] = useState(false);
 
   const handleOpenDialog = () => {
-    // setOpenDialog((prev) => !prev);
+    setOpenDialog((prev) => !prev);
   };
 
   let status = <div></div>;
-  const statusClasses = "flex items-center gap-2 text-[0.7rem] p-2 rounded-sm";
+  const statusClasses =
+    "flex justify-center items-center gap-2 text-[0.7rem] p-2 rounded- w-[8rem]";
   switch (order.deliveryStatus) {
     case "Out for delivery":
       status = (
@@ -48,18 +49,16 @@ function OrdersListItem({ order, t }) {
             <div className="flex items-center gap-2">
               <div className="rounded-full w-[35px] h-[35px] overflow-hidden">
                 <Image
-                  alt={order.customerDetails.name}
-                  src={order.customerDetails.profileImage}
+                  alt={order.shopName}
+                  src={order.shopImage[0] || "/diningTable.jpeg"}
                   width={100}
                   height={100}
                 />
               </div>
               <div>
-                <h1 className="font-bold text-sm">
-                  {order.customerDetails.name}
-                </h1>
+                <h1 className="font-bold text-sm">{order.shopName}</h1>
                 <p className="text-[10px] text-[var(--main-gray)] ">
-                  {order.customerDetails.address?.substring(0, 20)}
+                  {order.shopAddress?.substring(0, 20)}
                 </p>
               </div>
             </div>
@@ -84,10 +83,12 @@ function OrdersListItem({ order, t }) {
               </div>
             </div>
           </div>
-          <div className="flex text-[10px] items-center text-[var(--main-gray)] mb-1 justify-center">
-            {order.items.length - 2} {" " + t("more_product") + " "}
-            <ChevronRight size={15} />
-          </div>
+          {order.items.length > 2 && (
+            <div className="flex text-[10px] items-center text-[var(--main-gray)] mb-1 justify-center">
+              {order.items.length - 2} {" " + t("more_product") + " "}
+              <ChevronRight size={15} />
+            </div>
+          )}
           {/* </div> */}
         </div>
       </div>
