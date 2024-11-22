@@ -58,7 +58,7 @@ function ListModal({
         ) : (
           <>
             <div
-              className={`flex justify-between  ${
+              className={`flex justify-between items-center  ${
                 isCheckBox ? "mx-2 mb-3" : "mx-0 mb-2"
               } `}
             >
