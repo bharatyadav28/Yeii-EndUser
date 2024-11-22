@@ -50,7 +50,7 @@ function OrdersListItem({ order, t }) {
               <div className="rounded-full w-[35px] h-[35px] overflow-hidden">
                 <Image
                   alt={order.shopName}
-                  src={order.shopImage[0] || "/diningTable.jpeg"}
+                  src={order.shopImage[0] || "/service.png"}
                   width={100}
                   height={100}
                 />
