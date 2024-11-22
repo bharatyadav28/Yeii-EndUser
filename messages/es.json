@@ -17,13 +17,16 @@
     "heading": "Bienvenido de nuevo",
     "subHeading": "Inicia sesión en tu cuenta",
     "email": "Introduce el correo electrónico",
-    "emailPlaceholder": "Introduce el correo electrónico",
+    "emailPlaceholder": "Introduce el correo",
     "password": "Introduce la contraseña",
     "confirmPassword": "Confirma la nueva contraseña",
     "login": "Iniciar sesión",
     "createAccount": "Crear cuenta",
     "dontHaveAccount": "¿No tienes una cuenta?",
-    "forgotPassword": "Olvidé mi contraseña"
+    "forgotPassword": "¿Olvidaste tu contraseña?",
+    "or": "o",
+    "continue_with_google": "Continuar con Google",
+    "continue_as_guest": "Continuar como invitado"
   },
 
   "signupPage": {
