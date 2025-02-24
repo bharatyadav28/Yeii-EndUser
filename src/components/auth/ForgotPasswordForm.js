@@ -16,7 +16,9 @@ const ForgotPasswordForm = ({ changeState, email, changeEmail }) => {
 
   return (
     <>
-      <AuthHeading heading={t("heading")}>{t("subHeading")}</AuthHeading>
+      <AuthHeading heading={t("heading")}>
+        {<span className="text-[0.9rem]">{t("subHeading")}</span>}
+      </AuthHeading>
       <form onSubmit={handleSubmit}>
         <TextInput
           className="text-sm"

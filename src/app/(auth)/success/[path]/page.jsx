@@ -26,7 +26,7 @@ const SuccessPage = ({ params }) => {
         />
       ) : path === "account_created" ? (
         <SuccessCard
-          heading={<h1 className="max-w-[200px]">{t("heading")}</h1>}
+          heading={<h1 className="max-w-[400px]">{t("heading")}</h1>}
           subHeading={<p>{t("subHeading")}</p>}
           route="/login"
         ></SuccessCard>

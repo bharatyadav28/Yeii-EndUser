@@ -54,7 +54,7 @@
 
   "forgotPassword": {
     "heading": "Forgot password",
-    "subHeading": "Please enter the email address linked with your account to Receive OTP to change password.",
+    "subHeading": "Please enter the email address linked with your account to receive OTP to change password.",
     "reset_password": "Reset password",
     "email": "Enter Email id",
     "emailPlaceholder": "Enter email",
@@ -63,7 +63,7 @@
 
   "otpPage": {
     "heading": "Enter OTP",
-    "subHeading": "Please enter the email address linked with your account to Receive OTP to change password.",
+    "subHeading": "Please enter the OTP sent to your email to change password.",
     "change": "Change",
     "confirm": "Confirm",
     "resend": "Resend OTP"
@@ -246,17 +246,17 @@
 
     "notifications": "Notifications",
 
-    "manage_account": "Manage account",
+    "manage_account": "Manage Account",
 
     "settings": "Settings",
 
     "language": "Language",
     "reset_Password": "Reset Password",
 
-    "delete_account": "Delete account",
+    "delete_account": "Delete Account",
     "delete_account_desc": "Are you sure you want to Delete your account?",
 
-    "privacy_policy": "Privacy policy",
+    "privacy_policy": "Privacy Policy",
     "p1": "Your use of the App is also governed by our Privacy Policy [Link to Privacy Policy], which outlines how we collect, use, and disclose your personal information.",
     "p2": "By continuing to use the 'Brincos Dieras' App, you acknowledge that you have read, understood, and agreed to these Terms of Use. If you have any questions or concerns, please contact us at [Your Contact Information].",
     "p3": "Thank you for choosing 'Brincos Dieras' to showcase your business ideas!",

@@ -15,14 +15,14 @@ const AuthPage = ({
       className={`relative w-full flex flex-col !h-screen bg-[url('/profile-main-bg.png')] bg-cover bg-center ${className}`}
     >
       {showLogo && (
-        <div className="absolute flex items-center gap-2 mx-10 py-3">
+        <div className=" flex items-center gap-2 mx-10 py-3 pb-0">
           <MainLogo width={131} height={104} />
           <h1 className="text-[#E6235C] text-[1.7rem] font-bold">
             Brincos Dieras
           </h1>
         </div>
       )}
-      <div className="w-full h-full px-6 py-5 flex flex-col">
+      <div className=" relative bottom-10 w-full h-full px-6 py-5 pt-0 flex flex-col">
         <ClientAuth route={route} heading={heading} showHeader={showHeader}>
           {children}
         </ClientAuth>

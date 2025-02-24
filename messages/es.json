@@ -63,7 +63,7 @@
 
   "otpPage": {
     "heading": "Introduce el OTP",
-    "subHeading": "Introduce la dirección de correo vinculada a tu cuenta para recibir un OTP y cambiar la contraseña.",
+    "subHeading": "Por favor, ingrese el OTP enviado a su correo electrónico para cambiar la contraseña.",
     "change": "Cambiar",
     "confirm": "Confirmar",
     "resend": "Reenviar OTP"

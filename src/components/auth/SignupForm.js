@@ -143,9 +143,9 @@ const SignupForm = () => {
       />
 
       {/* checkbox for privacy policy */}
-      <div className="flex items-center justify-center self-center gap-3 text-xs pb-4 pt-2">
+      <div className="flex items-center  self-center gap-3 text-xs pb-4 pt-2 px-8">
         <CustomCheckBox onChange={(e) => console.log(e)} />
-        <p className="w-[55%]">
+        <p className="text-wrap">
           {t("terms1")}{" "}
           <Link
             href="/terms_of_service"
