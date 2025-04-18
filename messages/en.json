@@ -54,7 +54,7 @@
 
   "forgotPassword": {
     "heading": "Forgot password",
-    "subHeading": "Please enter the email address linked with your account to receive OTP to change password.",
+    "subHeading": "Please enter the email address linked with your account ",
     "reset_password": "Reset password",
     "email": "Enter Email id",
     "emailPlaceholder": "Enter email",

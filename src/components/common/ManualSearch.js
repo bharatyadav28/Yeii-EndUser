@@ -54,7 +54,7 @@ const ManualSearch = ({ open, handleOpen }) => {
 
   return (
     open && (
-      <div className="fixed top-0 left-0 right-0 bottom-0 bg-[var(--light-gray)] z-[1000] p-6 flex flex-col items-center gap-8  overflow-y-auto">
+      <div className="fixed top-0 left-0 right-0 bottom-0 bg-[var(--light-gray)] z-[1000] p-6 flex flex-col items-center gap-8  overflow-y-auto custom-scrollbar">
         <div className="w-full flex items-center ">
           <BackwardButton onClick={handleOpen} />
           <h1 className="text-lg font-semibold flex-grow text-center ">
